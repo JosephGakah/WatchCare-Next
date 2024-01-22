@@ -5,7 +5,6 @@ import Head from 'next/head'
 import Script from 'dangerous-html/react'
 
 import NavigationLinks3 from '../components/navigation-links3'
-import Features from '../components/features'
 import Practice from '../components/practice'
 import Doctor from '../components/doctor'
 
@@ -208,13 +207,6 @@ const Home = (props) => {
               />
             </div>
           </div>
-          <div id="features" className="home-features">
-            <div className="home-content01">
-              <Features></Features>
-              <Features Title="Virtual Clinic"></Features>
-              <Features Title="Clinical results"></Features>
-            </div>
-          </div>
           <div className="home-background"></div>
         </section>
         <section className="home-practices1">
@@ -244,7 +236,7 @@ const Home = (props) => {
               </p>
             </animate-on-reveal>
           </div>
-          <div className="home-content02">
+          <div className="home-content01">
             <div className="home-grid1">
               <Link href="/">
                 <a>
@@ -314,11 +306,12 @@ const Home = (props) => {
           <div className="home-heading09">
             <h2 className="home-header09">Why choose us</h2>
             <p className="home-header10">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt.
+              Our staff goes above and beyond to make sure you get the best
+              quality care possible, and are committed to providing you with all
+              the resources you need in order to get back on your feet.
             </p>
           </div>
-          <div className="home-content03">
+          <div className="home-content02">
             <div className="home-video">
               <video
                 src
@@ -335,7 +328,6 @@ const Home = (props) => {
             </div>
             <div className="home-caption7">
               <h3 className="home-header11">
-                Consectetur adipiscing elit, sed do eiusmod tempor
                 <span
                   dangerouslySetInnerHTML={{
                     __html: ' ',
@@ -343,15 +335,20 @@ const Home = (props) => {
                 />
               </h3>
               <p className="home-header12">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt.
+                We are passionate about our professional and personalized care,
+                and we work hard to meet and exceed, your expectations.
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: ' ',
+                  }}
+                />
               </p>
             </div>
           </div>
         </section>
-        <section className="home-features1">
+        <section className="home-features">
           <div className="home-section6">
-            <div className="home-content04">
+            <div className="home-content03">
               <div className="home-header13">
                 <h2 className="home-heading10">
                   Dedicated doctors with the core mission to help.
@@ -374,7 +371,7 @@ const Home = (props) => {
           </div>
           <div className="home-section7">
             <img alt="image" src="/lab-1500w.png" className="home-image14" />
-            <div className="home-content05">
+            <div className="home-content04">
               <div className="home-header14">
                 <h2 className="home-heading11">
                   Get access to specialty tests and breakthrough information.
@@ -395,7 +392,7 @@ const Home = (props) => {
             </div>
           </div>
           <div className="home-section8">
-            <div className="home-content06">
+            <div className="home-content05">
               <div className="home-header15">
                 <h2 className="home-heading12">
                   Find out how we can help you help you.
@@ -420,7 +417,7 @@ const Home = (props) => {
           </button>
         </section>
         <section id="schedule" className="home-schedule">
-          <div className="home-content07">
+          <div className="home-content06">
             <div className="home-header16">
               <h2 className="home-heading13">
                 Schedule an in person or virtual appointment today
@@ -452,7 +449,7 @@ const Home = (props) => {
               eiusmod tempor incididunt.
             </p>
           </div>
-          <div className="home-content08">
+          <div className="home-content07">
             <div className="home-type-one">
               <div className="home-alphabet">
                 <div data-letter="a" className="letter">
@@ -757,7 +754,7 @@ const Home = (props) => {
                   className="home-image19"
                 />
               </div>
-              <div className="home-content09">
+              <div className="home-content08">
                 <div className="home-details">
                   <span className="home-date1">November 23, 2022</span>
                   <p className="home-quick-description">
@@ -784,7 +781,7 @@ const Home = (props) => {
                   className="home-image22"
                 />
               </div>
-              <div className="home-content10">
+              <div className="home-content09">
                 <div className="home-details1">
                   <span className="home-date2">November 23, 2022</span>
                   <p className="home-quick-description1">
@@ -810,7 +807,7 @@ const Home = (props) => {
                   className="home-image25"
                 />
               </div>
-              <div className="home-content11">
+              <div className="home-content10">
                 <div className="home-details2">
                   <span className="home-date3">November 23, 2022</span>
                   <p className="home-quick-description2">
@@ -834,7 +831,7 @@ const Home = (props) => {
         <div className="home-download">
           <div className="home-main1">
             <img alt="image" src="/phone-1500w.png" className="home-image27" />
-            <div className="home-content12">
+            <div className="home-content11">
               <h2 className="home-text85">
                 Download our mobile app and book your next appointment
               </h2>
@@ -1537,27 +1534,6 @@ buttons.forEach(button => {
             height: 95%;
             object-fit: cover;
           }
-          .home-features {
-            width: 100%;
-            display: flex;
-            z-index: 100;
-            align-items: center;
-            padding-top: var(--dl-space-space-fiveunits);
-            flex-direction: row;
-            padding-bottom: var(--dl-space-space-fiveunits);
-            justify-content: center;
-            background-color: #2461ff;
-          }
-          .home-content01 {
-            gap: var(--dl-space-space-threeunits);
-            flex: 1;
-            display: flex;
-            max-width: 1440px;
-            align-items: center;
-            padding-left: var(--dl-space-space-fiveunits);
-            padding-right: var(--dl-space-space-fiveunits);
-            flex-direction: row;
-          }
           .home-background {
             right: 0px;
             width: 37%;
@@ -1616,7 +1592,7 @@ buttons.forEach(button => {
             max-width: 385px;
             line-height: 22px;
           }
-          .home-content02 {
+          .home-content01 {
             gap: var(--dl-space-space-fourunits);
             display: flex;
             align-items: flex-start;
@@ -1688,7 +1664,7 @@ buttons.forEach(button => {
             text-align: center;
             line-height: 27px;
           }
-          .home-content03 {
+          .home-content02 {
             gap: var(--dl-space-space-threeunits);
             width: 100%;
             display: flex;
@@ -1747,7 +1723,7 @@ buttons.forEach(button => {
             text-align: center;
             line-height: 24px;
           }
-          .home-features1 {
+          .home-features {
             gap: 120px;
             width: 100%;
             display: flex;
@@ -1766,7 +1742,7 @@ buttons.forEach(button => {
             flex-direction: row;
             justify-content: space-between;
           }
-          .home-content04 {
+          .home-content03 {
             gap: var(--dl-space-space-oneandhalfunits);
             display: flex;
             align-items: flex-start;
@@ -1815,7 +1791,7 @@ buttons.forEach(button => {
             width: 520px;
             object-fit: cover;
           }
-          .home-content05 {
+          .home-content04 {
             gap: var(--dl-space-space-oneandhalfunits);
             display: flex;
             align-items: flex-start;
@@ -1856,7 +1832,7 @@ buttons.forEach(button => {
             flex-direction: row;
             justify-content: space-between;
           }
-          .home-content06 {
+          .home-content05 {
             gap: var(--dl-space-space-oneandhalfunits);
             display: flex;
             align-items: flex-start;
@@ -1899,7 +1875,7 @@ buttons.forEach(button => {
             padding-bottom: 120px;
             justify-content: center;
           }
-          .home-content07 {
+          .home-content06 {
             gap: var(--dl-space-space-fourunits);
             width: 100%;
             display: flex;
@@ -1969,7 +1945,7 @@ buttons.forEach(button => {
             max-width: 385px;
             line-height: 27px;
           }
-          .home-content08 {
+          .home-content07 {
             gap: var(--dl-space-space-fiveunits);
             flex: 1;
             display: flex;
@@ -2575,7 +2551,7 @@ buttons.forEach(button => {
             height: 50px;
             object-fit: cover;
           }
-          .home-content09 {
+          .home-content08 {
             flex: 1;
             width: 100%;
             display: flex;
@@ -2631,7 +2607,7 @@ buttons.forEach(button => {
             height: 100%;
             object-fit: cover;
           }
-          .home-content10 {
+          .home-content09 {
             flex: 1;
             width: 100%;
             display: flex;
@@ -2687,7 +2663,7 @@ buttons.forEach(button => {
             height: 100%;
             object-fit: cover;
           }
-          .home-content11 {
+          .home-content10 {
             flex: 1;
             width: 100%;
             display: flex;
@@ -2741,7 +2717,7 @@ buttons.forEach(button => {
             margin-top: -80px;
             object-fit: cover;
           }
-          .home-content12 {
+          .home-content11 {
             gap: var(--dl-space-space-threeunits);
             height: 100%;
             display: flex;
@@ -3056,14 +3032,6 @@ buttons.forEach(button => {
               padding-right: var(--dl-space-space-twounits);
               justify-content: flex-end;
             }
-            .home-features {
-              padding-top: var(--dl-space-space-fourunits);
-              flex-direction: row;
-              padding-bottom: var(--dl-space-space-fourunits);
-            }
-            .home-content01 {
-              flex-direction: column;
-            }
             .home-background {
               left: 0px;
               width: 100%;
@@ -3078,7 +3046,7 @@ buttons.forEach(button => {
             .home-why {
               gap: var(--dl-space-space-threeunits);
             }
-            .home-features1 {
+            .home-features {
               gap: var(--dl-space-space-threeunits);
             }
             .home-section6 {
@@ -3136,7 +3104,7 @@ buttons.forEach(button => {
             .home-text20 {
               text-align: center;
             }
-            .home-content08 {
+            .home-content07 {
               gap: var(--dl-space-space-threeunits);
             }
             .home-type-one {
@@ -3222,7 +3190,7 @@ buttons.forEach(button => {
             .home-image18 {
               height: 280px;
             }
-            .home-content09 {
+            .home-content08 {
               gap: var(--dl-space-space-twounits);
               padding-top: var(--dl-space-space-twounits);
               padding-left: var(--dl-space-space-twounits);
@@ -3239,7 +3207,7 @@ buttons.forEach(button => {
             .home-image21 {
               height: 280px;
             }
-            .home-content10 {
+            .home-content09 {
               gap: var(--dl-space-space-twounits);
               padding: var(--dl-space-space-twounits);
               justify-content: flex-start;
@@ -3253,7 +3221,7 @@ buttons.forEach(button => {
             .home-image24 {
               height: 280px;
             }
-            .home-content11 {
+            .home-content10 {
               gap: var(--dl-space-space-twounits);
               padding: var(--dl-space-space-twounits);
               justify-content: flex-start;
@@ -3261,7 +3229,7 @@ buttons.forEach(button => {
             .home-quick-description2 {
               font-size: 18px;
             }
-            .home-content12 {
+            .home-content11 {
               padding-left: var(--dl-space-space-oneandhalfunits);
               padding-right: var(--dl-space-space-oneandhalfunits);
             }
@@ -3325,10 +3293,6 @@ buttons.forEach(button => {
               max-width: 70%;
               line-height: 24px;
             }
-            .home-content01 {
-              padding-left: var(--dl-space-space-oneandhalfunits);
-              padding-right: var(--dl-space-space-oneandhalfunits);
-            }
             .home-practices1 {
               padding-top: var(--dl-space-space-fourunits);
               padding-left: var(--dl-space-space-oneandhalfunits);
@@ -3350,7 +3314,7 @@ buttons.forEach(button => {
               font-size: 14px;
               line-height: 21px;
             }
-            .home-content02 {
+            .home-content01 {
               gap: var(--dl-space-space-threeunits);
               width: 100%;
             }
@@ -3374,7 +3338,7 @@ buttons.forEach(button => {
               max-width: 60%;
               line-height: 21px;
             }
-            .home-content03 {
+            .home-content02 {
               gap: var(--dl-space-space-twounits);
             }
             .home-header11 {
@@ -3385,13 +3349,13 @@ buttons.forEach(button => {
               font-size: 14px;
               line-height: 21px;
             }
-            .home-features1 {
+            .home-features {
               padding-top: var(--dl-space-space-fourunits);
               padding-left: var(--dl-space-space-oneandhalfunits);
               padding-right: var(--dl-space-space-oneandhalfunits);
               padding-bottom: var(--dl-space-space-fourunits);
             }
-            .home-content04 {
+            .home-content03 {
               gap: var(--dl-space-space-unit);
             }
             .home-heading10 {
@@ -3431,7 +3395,7 @@ buttons.forEach(button => {
             .home-schedule {
               padding-bottom: var(--dl-space-space-fourunits);
             }
-            .home-content07 {
+            .home-content06 {
               gap: var(--dl-space-space-twounits);
               padding-top: var(--dl-space-space-fourunits);
               padding-left: var(--dl-space-space-oneandhalfunits);
@@ -3575,7 +3539,7 @@ buttons.forEach(button => {
               height: 620px;
               margin-top: 0px;
             }
-            .home-content12 {
+            .home-content11 {
               gap: var(--dl-space-space-twounits);
               padding-top: var(--dl-space-space-fourunits);
               padding-left: var(--dl-space-space-oneandhalfunits);

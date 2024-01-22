@@ -5,22 +5,45 @@ import PropTypes from 'prop-types'
 const Practice = (props) => {
   return (
     <>
-      <div className={`practice-practice ${props.rootClassName} `}>
-        <div className="practice-heading">
-          <h3 className="practice-header">{props.Title}</h3>
-          <p className="practice-caption">{props.Description}</p>
+      <animate-on-reveal
+        animation="fadeInUp"
+        duration="300ms"
+        delay="0s"
+        direction="normal"
+        easing="ease"
+        iteration="1"
+        className={`practice-animate-on-reveal ${props.rootClassName} `}
+      >
+        <div
+          data-thq-animate-on-reveal="true"
+          className={`practice-practice ${props.rootClassName} `}
+        >
+          <div className="practice-heading">
+            <h3 className="practice-header">{props.Title}</h3>
+            <p className="practice-caption">{props.Description}</p>
+          </div>
+          <div className="read-more">
+            <span className="practice-text">Read more</span>
+            <img
+              alt="image"
+              src="/Icons/arrow-2.svg"
+              className="practice-image"
+            />
+          </div>
         </div>
-        <div className="read-more">
-          <span className="practice-text">Read more</span>
-          <img
-            alt="image"
-            src="/Icons/arrow-2.svg"
-            className="practice-image"
-          />
-        </div>
-      </div>
+      </animate-on-reveal>
       <style jsx>
         {`
+          .practice-animate-on-reveal {
+            gap: var(--dl-space-space-oneandhalfunits);
+            display: flex;
+            position: relative;
+            align-items: flex-start;
+            padding-top: var(--dl-space-space-threeunits);
+            border-color: #b4b9c6;
+            flex-direction: column;
+            border-top-width: 1px;
+          }
           .practice-practice {
             gap: var(--dl-space-space-oneandhalfunits);
             display: flex;
@@ -28,14 +51,8 @@ const Practice = (props) => {
             align-items: flex-start;
             padding-top: var(--dl-space-space-threeunits);
             border-color: #b4b9c6;
-            animation-name: fadeInUp;
             flex-direction: column;
-            animation-delay: 0s;
             border-top-width: 1px;
-            animation-duration: 300ms;
-            animation-direction: normal;
-            animation-iteration-count: 1;
-            animation-timing-function: ease;
           }
           .practice-heading {
             gap: var(--dl-space-space-unit);
@@ -79,6 +96,9 @@ const Practice = (props) => {
             animation-timing-function: ease;
           }
           @media (max-width: 767px) {
+            .practice-animate-on-reveal {
+              padding-top: var(--dl-space-space-oneandhalfunits);
+            }
             .practice-practice {
               padding-top: var(--dl-space-space-oneandhalfunits);
             }

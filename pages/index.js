@@ -143,7 +143,7 @@ const Home = (props) => {
             </div>
           </div>
           <div className="home-btn-group">
-            <button className="button">Contact Us</button>
+            <button className="home-button button">Contact Us</button>
           </div>
           <div data-role="BurgerMenu" className="home-burger-menu">
             <svg viewBox="0 0 1024 1024" className="home-icon01">
@@ -187,13 +187,9 @@ const Home = (props) => {
             <div className="home-content">
               <div className="home-heading07">
                 <h1 className="home-header08">
-                  Experienced general practitioners who have an eye for your
-                  care
+                  Your Home Health Assistance Experts
                 </h1>
-                <p className="home-caption6">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt.
-                </p>
+                <p className="home-caption6">Quality Care you can Trust</p>
               </div>
               <button className="button button-main home-book">
                 <img
@@ -201,7 +197,7 @@ const Home = (props) => {
                   src="/Icons/calendar.svg"
                   className="home-image08"
                 />
-                <span>Book an appointment</span>
+                <span>Call Us Today</span>
               </button>
             </div>
             <div className="home-image09">
@@ -224,52 +220,87 @@ const Home = (props) => {
         <section className="home-practices1">
           <div className="home-heading08">
             <h2 className="home-text07">Our Services</h2>
-            <p className="home-text08">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt.
-            </p>
+            <animate-on-reveal
+              animation="fadeInUp"
+              duration="600ms"
+              delay="300s"
+              direction="normal"
+              easing="ease"
+              iteration="1"
+              className="home-animate-on-reveal"
+            >
+              <p data-thq-animate-on-reveal="true" className="home-text08">
+                <span>
+                  We prioritize the well-being and independence of our clients,
+                  providing dedicated caregivers who are trained and experienced
+                  in delivering exceptional care.
+                </span>
+                <br></br>
+                <span>
+                  With us,​ you can trust that your loved one will receive the
+                  support and attention they need to enhance their quality of
+                  life.
+                </span>
+              </p>
+            </animate-on-reveal>
           </div>
           <div className="home-content02">
             <div className="home-grid1">
               <Link href="/">
                 <a>
                   <div className="home-practice-wrapper">
-                    <Practice></Practice>
+                    <Practice rootClassName="practice-root-class-name"></Practice>
                   </div>
                 </a>
               </Link>
               <Link href="/">
                 <a>
                   <div className="home-practice-wrapper1">
-                    <Practice Title="Orthopedics"></Practice>
+                    <Practice
+                      Title="Comapionship"
+                      Description="Our dedicated caregivers provide compassionate companionship to individuals in need. "
+                      rootClassName="practice-root-class-name1"
+                    ></Practice>
                   </div>
                 </a>
               </Link>
               <Link href="/">
                 <a>
                   <div className="home-practice-wrapper2">
-                    <Practice Title="Ophtalmology"></Practice>
+                    <Practice
+                      Title="Alzheimer's and Dementia Care"
+                      Description="Our specialized Alzheimer's and Dementia care services are designed to  comprehensive  support   to  individuals  with  memory  loss  and cognitive decline."
+                    ></Practice>
                   </div>
                 </a>
               </Link>
               <Link href="/">
                 <a>
                   <div className="home-practice-wrapper3">
-                    <Practice Title="Pediatrics"></Practice>
+                    <Practice
+                      Title=" Short-Term Care"
+                      Description="We offer reliable and professional short-term care services for individuals in need of temporary assistance."
+                    ></Practice>
                   </div>
                 </a>
               </Link>
               <Link href="/">
                 <a>
                   <div className="home-practice-wrapper4">
-                    <Practice Title="Nutrition"></Practice>
+                    <Practice
+                      Title="Mobility Support"
+                      Description="we offer dedicated mobility support services to individuals who may require assistance with their movement and daily tasks."
+                    ></Practice>
                   </div>
                 </a>
               </Link>
               <Link href="/">
                 <a>
                   <div className="home-practice-wrapper5">
-                    <Practice Title="General"></Practice>
+                    <Practice
+                      Title="Shopping and Stocking Support"
+                      Description="Our caregivers are ready to lend a helping hand, ensuring that necessary supplies are available and the home is well-stocked."
+                    ></Practice>
                   </div>
                 </a>
               </Link>
@@ -331,7 +362,7 @@ const Home = (props) => {
                 </p>
               </div>
               <div className="read-more">
-                <span className="home-text10">See our doctors</span>
+                <span className="home-text13">See our doctors</span>
                 <img
                   alt="image"
                   src="/Icons/arrow-2.svg"
@@ -354,7 +385,7 @@ const Home = (props) => {
                 </p>
               </div>
               <div className="read-more">
-                <span className="home-text11">Find test</span>
+                <span className="home-text14">Find test</span>
                 <img
                   alt="image"
                   src="/Icons/arrow-2.svg"
@@ -415,8 +446,8 @@ const Home = (props) => {
         </section>
         <div className="home-search">
           <div className="home-heading14">
-            <h2 className="home-text16">Search diseases &amp; conditions</h2>
-            <p className="home-text17">
+            <h2 className="home-text19">Search diseases &amp; conditions</h2>
+            <p className="home-text20">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt.
             </p>
@@ -425,85 +456,85 @@ const Home = (props) => {
             <div className="home-type-one">
               <div className="home-alphabet">
                 <div data-letter="a" className="letter">
-                  <span className="home-text18">A</span>
+                  <span className="home-text21">A</span>
                 </div>
                 <div data-letter="b" className="letter">
-                  <span className="home-text19">B</span>
+                  <span className="home-text22">B</span>
                 </div>
                 <div data-letter="c" className="letter">
-                  <span className="home-text20">C</span>
+                  <span className="home-text23">C</span>
                 </div>
                 <div data-letter="d" className="letter">
-                  <span className="home-text21">D</span>
+                  <span className="home-text24">D</span>
                 </div>
                 <div data-letter="e" className="letter">
-                  <span className="home-text22">E</span>
+                  <span className="home-text25">E</span>
                 </div>
                 <div data-letter="f" className="letter">
-                  <span className="home-text23">F</span>
+                  <span className="home-text26">F</span>
                 </div>
                 <div data-letter="g" className="letter">
-                  <span className="home-text24">G</span>
+                  <span className="home-text27">G</span>
                 </div>
                 <div data-letter="h" className="letter">
-                  <span className="home-text25">H</span>
+                  <span className="home-text28">H</span>
                 </div>
                 <div data-letter="i" className="letter">
-                  <span className="home-text26">I</span>
+                  <span className="home-text29">I</span>
                 </div>
                 <div data-letter="j" className="letter">
-                  <span className="home-text27">J</span>
+                  <span className="home-text30">J</span>
                 </div>
                 <div data-letter="k" className="letter">
-                  <span className="home-text28">K</span>
+                  <span className="home-text31">K</span>
                 </div>
                 <div data-letter="l" className="letter">
-                  <span className="home-text29">L</span>
+                  <span className="home-text32">L</span>
                 </div>
                 <div data-letter="m" className="letter">
-                  <span className="home-text30">M</span>
+                  <span className="home-text33">M</span>
                 </div>
                 <div data-letter="n" className="letter">
-                  <span className="home-text31">N</span>
+                  <span className="home-text34">N</span>
                 </div>
                 <div data-letter="o" className="letter">
-                  <span className="home-text32">O</span>
+                  <span className="home-text35">O</span>
                 </div>
                 <div data-letter="p" className="letter">
-                  <span className="home-text33">P</span>
+                  <span className="home-text36">P</span>
                 </div>
                 <div data-letter="q" className="letter">
-                  <span className="home-text34">Q</span>
+                  <span className="home-text37">Q</span>
                 </div>
                 <div data-letter="r" className="letter">
-                  <span className="home-text35">R</span>
+                  <span className="home-text38">R</span>
                 </div>
                 <div data-letter="s" className="letter">
-                  <span className="home-text36">S</span>
+                  <span className="home-text39">S</span>
                 </div>
                 <div data-letter="t" className="letter">
-                  <span className="home-text37">T</span>
+                  <span className="home-text40">T</span>
                 </div>
                 <div data-letter="u" className="letter">
-                  <span className="home-text38">U</span>
+                  <span className="home-text41">U</span>
                 </div>
                 <div data-letter="v" className="letter">
-                  <span className="home-text39">V</span>
+                  <span className="home-text42">V</span>
                 </div>
                 <div data-letter="w" className="letter">
-                  <span className="home-text40">W</span>
+                  <span className="home-text43">W</span>
                 </div>
                 <div data-letter="x" className="letter">
-                  <span className="home-text41">X</span>
+                  <span className="home-text44">X</span>
                 </div>
                 <div data-letter="y" className="letter">
-                  <span className="home-text42">Y</span>
+                  <span className="home-text45">Y</span>
                 </div>
                 <div data-letter="z" className="letter">
-                  <span className="home-text43">Z</span>
+                  <span className="home-text46">Z</span>
                 </div>
               </div>
-              <p className="home-text44">
+              <p className="home-text47">
                 You don’t know it’s name? Check out symptom checker below
                 <span
                   dangerouslySetInnerHTML={{
@@ -518,8 +549,8 @@ const Home = (props) => {
             </div>
             <div className="home-type-two">
               <div className="home-heading16">
-                <h3 className="home-text45">Symptom checker</h3>
-                <p className="home-text46">
+                <h3 className="home-text48">Symptom checker</h3>
+                <p className="home-text49">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt.
                 </p>
@@ -527,53 +558,53 @@ const Home = (props) => {
               <div className="home-symptoms">
                 <div className="home-row">
                   <div className="symptom">
-                    <span className="home-text47">Abdominal pain</span>
+                    <span className="home-text50">Abdominal pain</span>
                   </div>
                   <div className="symptom">
-                    <span className="home-text48">Chest pain</span>
+                    <span className="home-text51">Chest pain</span>
                   </div>
                   <div className="symptom">
-                    <span className="home-text49">Constipation</span>
+                    <span className="home-text52">Constipation</span>
                   </div>
                   <div className="symptom">
-                    <span className="home-text50">Cough</span>
+                    <span className="home-text53">Cough</span>
                   </div>
                   <div className="symptom">
-                    <span className="home-text51">Breath difficulty</span>
+                    <span className="home-text54">Breath difficulty</span>
                   </div>
                 </div>
                 <div className="home-row1">
                   <div className="symptom">
-                    <span className="home-text52">Red eye</span>
+                    <span className="home-text55">Red eye</span>
                   </div>
                   <div className="symptom">
-                    <span className="home-text53">Foot pain</span>
+                    <span className="home-text56">Foot pain</span>
                   </div>
                   <div className="symptom">
-                    <span className="home-text54">Foot swelling</span>
+                    <span className="home-text57">Foot swelling</span>
                   </div>
                   <div className="symptom">
-                    <span className="home-text55">Headache</span>
+                    <span className="home-text58">Headache</span>
                   </div>
                   <div className="symptom">
-                    <span className="home-text56">Heart palpitation</span>
+                    <span className="home-text59">Heart palpitation</span>
                   </div>
                 </div>
                 <div className="home-row2">
                   <div className="symptom">
-                    <span className="home-text57">Knee pain</span>
+                    <span className="home-text60">Knee pain</span>
                   </div>
                   <div className="symptom">
-                    <span className="home-text58">Hip pain</span>
+                    <span className="home-text61">Hip pain</span>
                   </div>
                   <div className="symptom">
-                    <span className="home-text59">Low back pain</span>
+                    <span className="home-text62">Low back pain</span>
                   </div>
                   <div className="symptom">
-                    <span className="home-text60">Nasal congestion</span>
+                    <span className="home-text63">Nasal congestion</span>
                   </div>
                   <div className="symptom">
-                    <span className="home-text61">Neck pain</span>
+                    <span className="home-text64">Neck pain</span>
                   </div>
                 </div>
               </div>
@@ -582,8 +613,8 @@ const Home = (props) => {
         </div>
         <section id="book" className="home-book3">
           <div className="home-heading17">
-            <h2 className="home-text62">Book an appointment</h2>
-            <p className="home-text63">
+            <h2 className="home-text65">Book an appointment</h2>
+            <p className="home-text66">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt.
             </p>
@@ -591,10 +622,10 @@ const Home = (props) => {
           <div className="home-form">
             <div className="home-types1">
               <div className="book-type">
-                <span className="home-text64">In person appointment</span>
+                <span className="home-text67">In person appointment</span>
               </div>
               <div className="book-type">
-                <span className="home-text65">Virtual appointment</span>
+                <span className="home-text68">Virtual appointment</span>
               </div>
             </div>
             <div className="home-inputs">
@@ -634,7 +665,7 @@ const Home = (props) => {
                 className="input book-input"
               />
               <div className="home-lower">
-                <p className="home-text66">
+                <p className="home-text69">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt.
                 </p>
@@ -642,7 +673,7 @@ const Home = (props) => {
                   <button className="home-book4 button button-main">
                     <span>Book</span>
                   </button>
-                  <p className="home-text68">
+                  <p className="home-text71">
                     <span>
                       Lorem ipsum dolor sit amet, consectetur
                       <span
@@ -651,7 +682,7 @@ const Home = (props) => {
                         }}
                       />
                     </span>
-                    <span className="home-text70">adipiscing elit</span>
+                    <span className="home-text73">adipiscing elit</span>
                     <span>
                       , sed do eiusmod tempor
                       <span
@@ -660,7 +691,7 @@ const Home = (props) => {
                         }}
                       />
                     </span>
-                    <span className="home-text72">incididunt</span>
+                    <span className="home-text75">incididunt</span>
                     <span>.</span>
                   </p>
                 </div>
@@ -670,8 +701,8 @@ const Home = (props) => {
         </section>
         <section className="home-meet">
           <div className="home-heading18">
-            <h2 className="home-text74">Meet our doctors</h2>
-            <p className="home-text75">
+            <h2 className="home-text77">Meet our doctors</h2>
+            <p className="home-text78">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt.
             </p>
@@ -711,8 +742,8 @@ const Home = (props) => {
         </section>
         <section className="home-news">
           <div className="home-heading19">
-            <h2 className="home-text77">Read our latest news</h2>
-            <p className="home-text78">
+            <h2 className="home-text80">Read our latest news</h2>
+            <p className="home-text81">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt.
             </p>
@@ -736,7 +767,7 @@ const Home = (props) => {
                   </p>
                 </div>
                 <div className="read-more">
-                  <span className="home-text79">Read more</span>
+                  <span className="home-text82">Read more</span>
                   <img
                     alt="image"
                     src="/Icons/arrow.svg"
@@ -762,7 +793,7 @@ const Home = (props) => {
                   </p>
                 </div>
                 <div className="read-more">
-                  <span className="home-text80">Read more</span>
+                  <span className="home-text83">Read more</span>
                   <img
                     alt="image"
                     src="/Icons/arrow-2.svg"
@@ -789,7 +820,7 @@ const Home = (props) => {
                   </p>
                 </div>
                 <div className="read-more">
-                  <span className="home-text81">Read more</span>
+                  <span className="home-text84">Read more</span>
                   <img
                     alt="image"
                     src="/Icons/arrow-2.svg"
@@ -804,7 +835,7 @@ const Home = (props) => {
           <div className="home-main1">
             <img alt="image" src="/phone-1500w.png" className="home-image27" />
             <div className="home-content12">
-              <h2 className="home-text82">
+              <h2 className="home-text85">
                 Download our mobile app and book your next appointment
               </h2>
               <div className="home-buttons">
@@ -836,7 +867,7 @@ const Home = (props) => {
                 src="/Branding/logo-2.svg"
                 className="home-image30"
               />
-              <p className="home-text85">
+              <p className="home-text88">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt.
               </p>
@@ -1375,6 +1406,13 @@ buttons.forEach(button => {
             flex-direction: row;
             justify-content: space-between;
           }
+          .home-button {
+            color: var(--dl-color-gray-white);
+            padding: 10px;
+            box-shadow: 5px 5px 10px 0px #d4d4d4;
+            border-radius: var(--dl-radius-radius-radius4);
+            background-color: #0069ff;
+          }
           .home-burger-menu {
             display: none;
           }
@@ -1542,8 +1580,14 @@ buttons.forEach(button => {
             padding-top: 120px;
             padding-left: var(--dl-space-space-fiveunits);
             padding-right: 120px;
+            animation-name: fadeInUp;
             flex-direction: row;
             padding-bottom: 120px;
+            animation-delay: 0s;
+            animation-duration: 300ms;
+            animation-direction: normal;
+            animation-iteration-count: 1;
+            animation-timing-function: ease;
           }
           .home-heading08 {
             gap: var(--dl-space-space-oneandhalfunits);
@@ -1555,11 +1599,22 @@ buttons.forEach(button => {
             font-size: 56px;
             font-style: normal;
             font-weight: 600;
+            animation-name: fadeInUp;
+            animation-delay: 0s;
+            animation-duration: 300ms;
+            animation-direction: normal;
+            animation-iteration-count: 1;
+            animation-timing-function: ease;
+          }
+          .home-animate-on-reveal {
+            font-size: 18px;
+            max-width: 385px;
+            line-height: 22px;
           }
           .home-text08 {
             font-size: 18px;
             max-width: 385px;
-            line-height: 27px;
+            line-height: 22px;
           }
           .home-content02 {
             gap: var(--dl-space-space-fourunits);
@@ -1736,7 +1791,7 @@ buttons.forEach(button => {
             max-width: 600px;
             line-height: 27px;
           }
-          .home-text10 {
+          .home-text13 {
             font-style: normal;
             font-weight: 600;
             line-height: 24px;
@@ -1785,7 +1840,7 @@ buttons.forEach(button => {
             max-width: 600px;
             line-height: 27px;
           }
-          .home-text11 {
+          .home-text14 {
             font-style: normal;
             font-weight: 600;
             line-height: 24px;
@@ -1903,13 +1958,13 @@ buttons.forEach(button => {
             align-items: flex-start;
             flex-direction: column;
           }
-          .home-text16 {
+          .home-text19 {
             font-size: 56px;
             max-width: 385px;
             font-style: normal;
             font-weight: 600;
           }
-          .home-text17 {
+          .home-text20 {
             font-size: 18px;
             max-width: 385px;
             line-height: 27px;
@@ -1940,24 +1995,6 @@ buttons.forEach(button => {
             align-items: center;
             justify-content: center;
             grid-template-columns: repeat(10, minmax(60px, 1fr));
-          }
-          .home-text18 {
-            font-size: 20px;
-            font-style: normal;
-            font-family: Inter;
-            font-weight: 600;
-          }
-          .home-text19 {
-            font-size: 20px;
-            font-style: normal;
-            font-family: Inter;
-            font-weight: 600;
-          }
-          .home-text20 {
-            font-size: 20px;
-            font-style: normal;
-            font-family: Inter;
-            font-weight: 600;
           }
           .home-text21 {
             font-size: 20px;
@@ -2098,6 +2135,24 @@ buttons.forEach(button => {
             font-weight: 600;
           }
           .home-text44 {
+            font-size: 20px;
+            font-style: normal;
+            font-family: Inter;
+            font-weight: 600;
+          }
+          .home-text45 {
+            font-size: 20px;
+            font-style: normal;
+            font-family: Inter;
+            font-weight: 600;
+          }
+          .home-text46 {
+            font-size: 20px;
+            font-style: normal;
+            font-family: Inter;
+            font-weight: 600;
+          }
+          .home-text47 {
             max-width: 700px;
             line-height: 24px;
           }
@@ -2138,12 +2193,12 @@ buttons.forEach(button => {
             flex-direction: column;
             justify-content: flex-start;
           }
-          .home-text45 {
+          .home-text48 {
             font-size: 30px;
             font-style: normal;
             font-weight: 600;
           }
-          .home-text46 {
+          .home-text49 {
             max-width: 700px;
             line-height: 24px;
           }
@@ -2164,24 +2219,6 @@ buttons.forEach(button => {
             flex-direction: row;
             justify-content: flex-start;
           }
-          .home-text47 {
-            font-style: normal;
-            font-family: Inter;
-            font-weight: 600;
-            white-space: nowrap;
-          }
-          .home-text48 {
-            font-style: normal;
-            font-family: Inter;
-            font-weight: 600;
-            white-space: nowrap;
-          }
-          .home-text49 {
-            font-style: normal;
-            font-family: Inter;
-            font-weight: 600;
-            white-space: nowrap;
-          }
           .home-text50 {
             font-style: normal;
             font-family: Inter;
@@ -2193,13 +2230,6 @@ buttons.forEach(button => {
             font-family: Inter;
             font-weight: 600;
             white-space: nowrap;
-          }
-          .home-row1 {
-            gap: var(--dl-space-space-unit);
-            display: flex;
-            align-items: center;
-            flex-direction: row;
-            justify-content: flex-start;
           }
           .home-text52 {
             font-style: normal;
@@ -2219,6 +2249,13 @@ buttons.forEach(button => {
             font-weight: 600;
             white-space: nowrap;
           }
+          .home-row1 {
+            gap: var(--dl-space-space-unit);
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            justify-content: flex-start;
+          }
           .home-text55 {
             font-style: normal;
             font-family: Inter;
@@ -2230,13 +2267,6 @@ buttons.forEach(button => {
             font-family: Inter;
             font-weight: 600;
             white-space: nowrap;
-          }
-          .home-row2 {
-            gap: var(--dl-space-space-unit);
-            display: flex;
-            align-items: center;
-            flex-direction: row;
-            justify-content: flex-start;
           }
           .home-text57 {
             font-style: normal;
@@ -2256,6 +2286,13 @@ buttons.forEach(button => {
             font-weight: 600;
             white-space: nowrap;
           }
+          .home-row2 {
+            gap: var(--dl-space-space-unit);
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            justify-content: flex-start;
+          }
           .home-text60 {
             font-style: normal;
             font-family: Inter;
@@ -2263,6 +2300,24 @@ buttons.forEach(button => {
             white-space: nowrap;
           }
           .home-text61 {
+            font-style: normal;
+            font-family: Inter;
+            font-weight: 600;
+            white-space: nowrap;
+          }
+          .home-text62 {
+            font-style: normal;
+            font-family: Inter;
+            font-weight: 600;
+            white-space: nowrap;
+          }
+          .home-text63 {
+            font-style: normal;
+            font-family: Inter;
+            font-weight: 600;
+            white-space: nowrap;
+          }
+          .home-text64 {
             font-style: normal;
             font-family: Inter;
             font-weight: 600;
@@ -2289,14 +2344,14 @@ buttons.forEach(button => {
             align-items: center;
             flex-direction: column;
           }
-          .home-text62 {
+          .home-text65 {
             font-size: 56px;
             max-width: 600px;
             font-style: normal;
             text-align: center;
             font-weight: 600;
           }
-          .home-text63 {
+          .home-text66 {
             font-size: 18px;
             max-width: 700px;
             text-align: center;
@@ -2317,13 +2372,13 @@ buttons.forEach(button => {
             flex-direction: row;
             justify-content: center;
           }
-          .home-text64 {
+          .home-text67 {
             font-style: normal;
             font-family: Inter;
             font-weight: 600;
             white-space: nowrap;
           }
-          .home-text65 {
+          .home-text68 {
             font-style: normal;
             font-family: Inter;
             font-weight: 600;
@@ -2360,7 +2415,7 @@ buttons.forEach(button => {
             flex-direction: column;
             justify-content: flex-start;
           }
-          .home-text66 {
+          .home-text69 {
             font-size: 10px;
             max-width: 700px;
             text-align: left;
@@ -2377,18 +2432,18 @@ buttons.forEach(button => {
           .home-book4 {
             width: 100%;
           }
-          .home-text68 {
+          .home-text71 {
             font-size: 10px;
             max-width: 700px;
             text-align: left;
             line-height: 15px;
           }
-          .home-text70 {
+          .home-text73 {
             color: #2461ff;
             font-style: normal;
             font-weight: 600;
           }
-          .home-text72 {
+          .home-text75 {
             color: #2461ff;
             font-style: normal;
             font-weight: 600;
@@ -2411,14 +2466,14 @@ buttons.forEach(button => {
             align-items: center;
             flex-direction: column;
           }
-          .home-text74 {
+          .home-text77 {
             font-size: 56px;
             max-width: 600px;
             font-style: normal;
             text-align: center;
             font-weight: 600;
           }
-          .home-text75 {
+          .home-text78 {
             font-size: 18px;
             max-width: 700px;
             text-align: center;
@@ -2478,14 +2533,14 @@ buttons.forEach(button => {
             align-items: center;
             flex-direction: column;
           }
-          .home-text77 {
+          .home-text80 {
             font-size: 56px;
             max-width: 600px;
             font-style: normal;
             text-align: center;
             font-weight: 600;
           }
-          .home-text78 {
+          .home-text81 {
             font-size: 18px;
             max-width: 700px;
             text-align: center;
@@ -2545,7 +2600,7 @@ buttons.forEach(button => {
             font-style: normal;
             font-weight: 500;
           }
-          .home-text79 {
+          .home-text82 {
             color: rgb(255, 255, 255);
             font-style: normal;
             font-weight: 600;
@@ -2601,7 +2656,7 @@ buttons.forEach(button => {
             font-style: normal;
             font-weight: 500;
           }
-          .home-text80 {
+          .home-text83 {
             color: #000000;
             font-style: normal;
             font-weight: 600;
@@ -2657,7 +2712,7 @@ buttons.forEach(button => {
             font-style: normal;
             font-weight: 500;
           }
-          .home-text81 {
+          .home-text84 {
             color: #000000;
             font-style: normal;
             font-weight: 600;
@@ -2697,7 +2752,7 @@ buttons.forEach(button => {
             padding-bottom: 120px;
             justify-content: center;
           }
-          .home-text82 {
+          .home-text85 {
             font-size: 40px;
             max-width: 600px;
             font-style: normal;
@@ -2751,7 +2806,7 @@ buttons.forEach(button => {
             width: 165px;
             object-fit: cover;
           }
-          .home-text85 {
+          .home-text88 {
             color: rgb(255, 255, 255);
             font-size: 14px;
             line-height: 21px;
@@ -3074,11 +3129,11 @@ buttons.forEach(button => {
             .home-heading14 {
               align-items: center;
             }
-            .home-text16 {
+            .home-text19 {
               max-width: 100%;
               text-align: center;
             }
-            .home-text17 {
+            .home-text20 {
               text-align: center;
             }
             .home-content08 {
@@ -3099,7 +3154,7 @@ buttons.forEach(button => {
               padding-left: var(--dl-space-space-fiveunits);
               padding-right: var(--dl-space-space-fiveunits);
             }
-            .home-text44 {
+            .home-text47 {
               text-align: center;
             }
             .home-type-two {
@@ -3108,10 +3163,10 @@ buttons.forEach(button => {
             .home-heading16 {
               align-items: center;
             }
-            .home-text45 {
+            .home-text48 {
               text-align: center;
             }
-            .home-text46 {
+            .home-text49 {
               text-align: center;
             }
             .home-symptoms {
@@ -3287,6 +3342,10 @@ buttons.forEach(button => {
               font-size: 30px;
               line-height: 36px;
             }
+            .home-animate-on-reveal {
+              font-size: 14px;
+              line-height: 21px;
+            }
             .home-text08 {
               font-size: 14px;
               line-height: 21px;
@@ -3404,11 +3463,11 @@ buttons.forEach(button => {
             .home-heading14 {
               gap: var(--dl-space-space-unit);
             }
-            .home-text16 {
+            .home-text19 {
               font-size: 30px;
               line-height: 36px;
             }
-            .home-text17 {
+            .home-text20 {
               font-size: 14px;
               max-width: 80%;
               line-height: 21px;
@@ -3431,10 +3490,10 @@ buttons.forEach(button => {
             .home-heading17 {
               gap: var(--dl-space-space-unit);
             }
-            .home-text62 {
+            .home-text65 {
               font-size: 24px;
             }
-            .home-text63 {
+            .home-text66 {
               font-size: 14px;
               max-width: 80%;
               line-height: 21px;
@@ -3459,10 +3518,10 @@ buttons.forEach(button => {
               gap: var(--dl-space-space-unit);
               padding-right: 0px;
             }
-            .home-text74 {
+            .home-text77 {
               font-size: 24px;
             }
-            .home-text75 {
+            .home-text78 {
               font-size: 14px;
               max-width: 80%;
             }
@@ -3487,11 +3546,11 @@ buttons.forEach(button => {
             .home-heading19 {
               gap: var(--dl-space-space-unit);
             }
-            .home-text77 {
+            .home-text80 {
               font-size: 30px;
               line-height: 36px;
             }
-            .home-text78 {
+            .home-text81 {
               font-size: 14px;
               max-width: 80%;
               line-height: 21px;
@@ -3523,7 +3582,7 @@ buttons.forEach(button => {
               padding-right: var(--dl-space-space-oneandhalfunits);
               padding-bottom: var(--dl-space-space-threeunits);
             }
-            .home-text82 {
+            .home-text85 {
               max-width: 500px;
             }
             .home-buttons {
@@ -3545,7 +3604,7 @@ buttons.forEach(button => {
             .home-image30 {
               width: 110px;
             }
-            .home-text85 {
+            .home-text88 {
               font-size: 12px;
               line-height: 18px;
             }

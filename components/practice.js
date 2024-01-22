@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 const Practice = (props) => {
   return (
     <>
-      <div className="practice-practice">
+      <div className={`practice-practice ${props.rootClassName} `}>
         <div className="practice-heading">
           <h3 className="practice-header">{props.Title}</h3>
           <p className="practice-caption">{props.Description}</p>
@@ -28,8 +28,14 @@ const Practice = (props) => {
             align-items: flex-start;
             padding-top: var(--dl-space-space-threeunits);
             border-color: #b4b9c6;
+            animation-name: fadeInUp;
             flex-direction: column;
+            animation-delay: 0s;
             border-top-width: 1px;
+            animation-duration: 300ms;
+            animation-direction: normal;
+            animation-iteration-count: 1;
+            animation-timing-function: ease;
           }
           .practice-heading {
             gap: var(--dl-space-space-unit);
@@ -56,6 +62,22 @@ const Practice = (props) => {
             width: 12px;
             object-fit: cover;
           }
+          .practice-root-class-name {
+            animation-name: none;
+            animation-delay: 0s;
+            animation-duration: 300ms;
+            animation-direction: normal;
+            animation-iteration-count: 1;
+            animation-timing-function: ease;
+          }
+          .practice-root-class-name1 {
+            animation-name: none;
+            animation-delay: 0s;
+            animation-duration: 300ms;
+            animation-direction: normal;
+            animation-iteration-count: 1;
+            animation-timing-function: ease;
+          }
           @media (max-width: 767px) {
             .practice-practice {
               padding-top: var(--dl-space-space-oneandhalfunits);
@@ -76,14 +98,16 @@ const Practice = (props) => {
 }
 
 Practice.defaultProps = {
-  Title: 'Cardiology',
+  Title: 'Personal Care',
   Description:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
+    'We provide personalized personal care services to support individuals with their daily activities and personal hygiene needs',
+  rootClassName: '',
 }
 
 Practice.propTypes = {
   Title: PropTypes.string,
   Description: PropTypes.string,
+  rootClassName: PropTypes.string,
 }
 
 export default Practice

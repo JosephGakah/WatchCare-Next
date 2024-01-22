@@ -4,11 +4,10 @@ import Head from 'next/head'
 
 import Script from 'dangerous-html/react'
 
+import NavigationLinks3 from '../components/navigation-links3'
 import Features from '../components/features'
 import Practice from '../components/practice'
 import Doctor from '../components/doctor'
-import NavigationLinks from '../components/navigation-links'
-import NavigationLinks1 from '../components/navigation-links1'
 
 const Home = (props) => {
   return (
@@ -136,93 +135,62 @@ const Home = (props) => {
             </div>
           </div>
         </div>
-        <section className="home-hero">
-          <header data-thq="thq-navbar" className="home-navbar">
-            <div className="home-left">
-              <img
-                alt="image"
-                src="/Branding/logo-1500h.png"
-                className="home-logo"
-              />
-              <nav className="home-links">
-                <a href="#features" className="home-link">
-                  Features
-                </a>
-                <a href="#how-it-works" className="home-link01">
-                  How it works
-                </a>
-                <span className="home-link02">Prices</span>
-                <a href="#schedule" className="home-link03">
-                  Contact
-                </a>
-              </nav>
+        <header data-role="Header" className="home-header07">
+          <div className="home-container1">
+            <img
+              alt="logo"
+              src="https://presentation-website-assets.teleporthq.io/logos/logo1.png"
+              className="home-image06"
+            />
+            <div className="home-nav">
+              <NavigationLinks3 rootClassName="rootClassName12"></NavigationLinks3>
             </div>
-            <div data-thq="thq-navbar-btn-group" className="home-right">
-              <button className="home-phone button">
+          </div>
+          <div className="home-btn-group">
+            <button className="button">Buy now</button>
+          </div>
+          <div data-role="BurgerMenu" className="home-burger-menu">
+            <svg viewBox="0 0 1024 1024" className="home-icon01">
+              <path d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
+            </svg>
+          </div>
+          <div data-role="MobileMenu" className="home-mobile-menu">
+            <nav className="home-nav1">
+              <div className="home-container2">
                 <img
                   alt="image"
-                  src="/Icons/phone.svg"
-                  className="home-image06"
-                />
-                <span className="home-text06">+0 123-456-789</span>
-              </button>
-              <a href="#book" className="home-book button button-main">
-                <img
-                  alt="image"
-                  src="/Icons/calendar.svg"
+                  src="https://presentation-website-assets.teleporthq.io/logos/logo.png"
                   className="home-image07"
                 />
-                <span className="home-text07">Book an appointment</span>
-              </a>
-            </div>
-            <div data-thq="thq-burger-menu" className="home-burger-menu">
-              <svg viewBox="0 0 1024 1024" className="home-icon01">
-                <path d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
+                <div
+                  data-role="CloseMobileMenu"
+                  className="home-close-mobile-menu"
+                >
+                  <svg viewBox="0 0 1024 1024" className="home-icon03">
+                    <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"></path>
+                  </svg>
+                </div>
+              </div>
+              <NavigationLinks3 rootClassName="rootClassName14"></NavigationLinks3>
+            </nav>
+            <div>
+              <svg viewBox="0 0 950.8571428571428 1024" className="home-icon05">
+                <path d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"></path>
+              </svg>
+              <svg viewBox="0 0 877.7142857142857 1024" className="home-icon07">
+                <path d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"></path>
+              </svg>
+              <svg viewBox="0 0 602.2582857142856 1024" className="home-icon09">
+                <path d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"></path>
               </svg>
             </div>
-            <div data-thq="thq-mobile-menu" className="home-mobile-menu">
-              <div
-                data-thq="thq-mobile-menu-nav"
-                data-role="Nav"
-                className="home-nav"
-              >
-                <div className="home-container01">
-                  <img
-                    alt="image"
-                    src="/Branding/logo-1500h.png"
-                    className="home-image08"
-                  />
-                  <div data-thq="thq-close-menu" className="home-menu-close">
-                    <svg viewBox="0 0 1024 1024" className="home-icon03">
-                      <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"></path>
-                    </svg>
-                  </div>
-                </div>
-                <nav
-                  data-thq="thq-mobile-menu-nav-links"
-                  data-role="Nav"
-                  className="home-nav1"
-                >
-                  <span className="home-text08">Features</span>
-                  <span className="home-text09">How it works</span>
-                  <span className="home-text10">Prices</span>
-                  <span className="home-text11">Contact</span>
-                  <a href="#book" className="home-book1 button button-main">
-                    <img
-                      alt="image"
-                      src="/Icons/calendar.svg"
-                      className="home-image09"
-                    />
-                    <span className="home-text12">Book an appointment</span>
-                  </a>
-                </nav>
-              </div>
-            </div>
-          </header>
+          </div>
+        </header>
+        <section className="home-hero">
           <div className="home-main">
             <div className="home-content">
               <div className="home-heading07">
-                <h1 className="home-header07">
+                <h1 className="home-header08">
                   Experienced general practitioners who have an eye for your
                   care
                 </h1>
@@ -231,20 +199,20 @@ const Home = (props) => {
                   do eiusmod tempor incididunt.
                 </p>
               </div>
-              <button className="button button-main home-book2">
+              <button className="button button-main home-book">
                 <img
                   alt="image"
                   src="/Icons/calendar.svg"
-                  className="home-image10"
+                  className="home-image08"
                 />
                 <span>Book an appointment</span>
               </button>
             </div>
-            <div className="home-image11">
+            <div className="home-image09">
               <img
                 alt="image"
                 src="/doctor-image-1500w.png"
-                className="home-image12"
+                className="home-image10"
               />
             </div>
           </div>
@@ -259,8 +227,8 @@ const Home = (props) => {
         </section>
         <section className="home-practices1">
           <div className="home-heading08">
-            <h2 className="home-text14">Our practices</h2>
-            <p className="home-text15">
+            <h2 className="home-text07">Our practices</h2>
+            <p className="home-text08">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt.
             </p>
@@ -317,8 +285,8 @@ const Home = (props) => {
         </section>
         <section id="how-it-works" className="home-why">
           <div className="home-heading09">
-            <h2 className="home-header08">Why choose us</h2>
-            <p className="home-header09">
+            <h2 className="home-header09">Why choose us</h2>
+            <p className="home-header10">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt.
             </p>
@@ -334,12 +302,12 @@ const Home = (props) => {
                 <img
                   alt="image"
                   src="/Icons/play.svg"
-                  className="home-image13"
+                  className="home-image11"
                 />
               </div>
             </div>
             <div className="home-caption7">
-              <h3 className="home-header10">
+              <h3 className="home-header11">
                 Consectetur adipiscing elit, sed do eiusmod tempor
                 <span
                   dangerouslySetInnerHTML={{
@@ -347,7 +315,7 @@ const Home = (props) => {
                   }}
                 />
               </h3>
-              <p className="home-header11">
+              <p className="home-header12">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt.
               </p>
@@ -357,7 +325,7 @@ const Home = (props) => {
         <section className="home-features1">
           <div className="home-section6">
             <div className="home-content04">
-              <div className="home-header12">
+              <div className="home-header13">
                 <h2 className="home-heading10">
                   Dedicated doctors with the core mission to help.
                 </h2>
@@ -367,19 +335,20 @@ const Home = (props) => {
                 </p>
               </div>
               <div className="read-more">
-                <span className="home-text17">See our doctors</span>
+                <span className="home-text10">See our doctors</span>
                 <img
                   alt="image"
                   src="/Icons/arrow-2.svg"
-                  className="home-image14"
+                  className="home-image12"
                 />
               </div>
             </div>
-            <img alt="image" src="/xray-1500w.png" className="home-image15" />
+            <img alt="image" src="/xray-1500w.png" className="home-image13" />
           </div>
           <div className="home-section7">
+            <img alt="image" src="/lab-1500w.png" className="home-image14" />
             <div className="home-content05">
-              <div className="home-header13">
+              <div className="home-header14">
                 <h2 className="home-heading11">
                   Get access to specialty tests and breakthrough information.
                 </h2>
@@ -389,19 +358,18 @@ const Home = (props) => {
                 </p>
               </div>
               <div className="read-more">
-                <span className="home-text18">Find test</span>
+                <span className="home-text11">Find test</span>
                 <img
                   alt="image"
                   src="/Icons/arrow-2.svg"
-                  className="home-image16"
+                  className="home-image15"
                 />
               </div>
             </div>
-            <img alt="image" src="/lab-1500w.png" className="home-image17" />
           </div>
           <div className="home-section8">
             <div className="home-content06">
-              <div className="home-header14">
+              <div className="home-header15">
                 <h2 className="home-heading12">
                   Find out how we can help you help you.
                 </h2>
@@ -410,23 +378,23 @@ const Home = (props) => {
                   do eiusmod tempor incididunt.
                 </p>
               </div>
-              <button className="button button-main home-book3">
+              <button className="button button-main home-book1">
                 <span>Book a virtual appointment</span>
               </button>
             </div>
             <img
               alt="image"
               src="/examination-1500w.png"
-              className="home-image18"
+              className="home-image16"
             />
           </div>
-          <button className="home-book4 button button-main">
+          <button className="home-book2 button button-main">
             <span>Book a virtual appointment</span>
           </button>
         </section>
         <section id="schedule" className="home-schedule">
           <div className="home-content07">
-            <div className="home-header15">
+            <div className="home-header16">
               <h2 className="home-heading13">
                 Schedule an in person or virtual appointment today
               </h2>
@@ -451,8 +419,8 @@ const Home = (props) => {
         </section>
         <div className="home-search">
           <div className="home-heading14">
-            <h2 className="home-text23">Search diseases &amp; conditions</h2>
-            <p className="home-text24">
+            <h2 className="home-text16">Search diseases &amp; conditions</h2>
+            <p className="home-text17">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt.
             </p>
@@ -461,85 +429,85 @@ const Home = (props) => {
             <div className="home-type-one">
               <div className="home-alphabet">
                 <div data-letter="a" className="letter">
-                  <span className="home-text25">A</span>
+                  <span className="home-text18">A</span>
                 </div>
                 <div data-letter="b" className="letter">
-                  <span className="home-text26">B</span>
+                  <span className="home-text19">B</span>
                 </div>
                 <div data-letter="c" className="letter">
-                  <span className="home-text27">C</span>
+                  <span className="home-text20">C</span>
                 </div>
                 <div data-letter="d" className="letter">
-                  <span className="home-text28">D</span>
+                  <span className="home-text21">D</span>
                 </div>
                 <div data-letter="e" className="letter">
-                  <span className="home-text29">E</span>
+                  <span className="home-text22">E</span>
                 </div>
                 <div data-letter="f" className="letter">
-                  <span className="home-text30">F</span>
+                  <span className="home-text23">F</span>
                 </div>
                 <div data-letter="g" className="letter">
-                  <span className="home-text31">G</span>
+                  <span className="home-text24">G</span>
                 </div>
                 <div data-letter="h" className="letter">
-                  <span className="home-text32">H</span>
+                  <span className="home-text25">H</span>
                 </div>
                 <div data-letter="i" className="letter">
-                  <span className="home-text33">I</span>
+                  <span className="home-text26">I</span>
                 </div>
                 <div data-letter="j" className="letter">
-                  <span className="home-text34">J</span>
+                  <span className="home-text27">J</span>
                 </div>
                 <div data-letter="k" className="letter">
-                  <span className="home-text35">K</span>
+                  <span className="home-text28">K</span>
                 </div>
                 <div data-letter="l" className="letter">
-                  <span className="home-text36">L</span>
+                  <span className="home-text29">L</span>
                 </div>
                 <div data-letter="m" className="letter">
-                  <span className="home-text37">M</span>
+                  <span className="home-text30">M</span>
                 </div>
                 <div data-letter="n" className="letter">
-                  <span className="home-text38">N</span>
+                  <span className="home-text31">N</span>
                 </div>
                 <div data-letter="o" className="letter">
-                  <span className="home-text39">O</span>
+                  <span className="home-text32">O</span>
                 </div>
                 <div data-letter="p" className="letter">
-                  <span className="home-text40">P</span>
+                  <span className="home-text33">P</span>
                 </div>
                 <div data-letter="q" className="letter">
-                  <span className="home-text41">Q</span>
+                  <span className="home-text34">Q</span>
                 </div>
                 <div data-letter="r" className="letter">
-                  <span className="home-text42">R</span>
+                  <span className="home-text35">R</span>
                 </div>
                 <div data-letter="s" className="letter">
-                  <span className="home-text43">S</span>
+                  <span className="home-text36">S</span>
                 </div>
                 <div data-letter="t" className="letter">
-                  <span className="home-text44">T</span>
+                  <span className="home-text37">T</span>
                 </div>
                 <div data-letter="u" className="letter">
-                  <span className="home-text45">U</span>
+                  <span className="home-text38">U</span>
                 </div>
                 <div data-letter="v" className="letter">
-                  <span className="home-text46">V</span>
+                  <span className="home-text39">V</span>
                 </div>
                 <div data-letter="w" className="letter">
-                  <span className="home-text47">W</span>
+                  <span className="home-text40">W</span>
                 </div>
                 <div data-letter="x" className="letter">
-                  <span className="home-text48">X</span>
+                  <span className="home-text41">X</span>
                 </div>
                 <div data-letter="y" className="letter">
-                  <span className="home-text49">Y</span>
+                  <span className="home-text42">Y</span>
                 </div>
                 <div data-letter="z" className="letter">
-                  <span className="home-text50">Z</span>
+                  <span className="home-text43">Z</span>
                 </div>
               </div>
-              <p className="home-text51">
+              <p className="home-text44">
                 You don’t know it’s name? Check out symptom checker below
                 <span
                   dangerouslySetInnerHTML={{
@@ -554,8 +522,8 @@ const Home = (props) => {
             </div>
             <div className="home-type-two">
               <div className="home-heading16">
-                <h3 className="home-text52">Symptom checker</h3>
-                <p className="home-text53">
+                <h3 className="home-text45">Symptom checker</h3>
+                <p className="home-text46">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt.
                 </p>
@@ -563,63 +531,63 @@ const Home = (props) => {
               <div className="home-symptoms">
                 <div className="home-row">
                   <div className="symptom">
-                    <span className="home-text54">Abdominal pain</span>
+                    <span className="home-text47">Abdominal pain</span>
                   </div>
                   <div className="symptom">
-                    <span className="home-text55">Chest pain</span>
+                    <span className="home-text48">Chest pain</span>
                   </div>
                   <div className="symptom">
-                    <span className="home-text56">Constipation</span>
+                    <span className="home-text49">Constipation</span>
                   </div>
                   <div className="symptom">
-                    <span className="home-text57">Cough</span>
+                    <span className="home-text50">Cough</span>
                   </div>
                   <div className="symptom">
-                    <span className="home-text58">Breath difficulty</span>
+                    <span className="home-text51">Breath difficulty</span>
                   </div>
                 </div>
                 <div className="home-row1">
                   <div className="symptom">
-                    <span className="home-text59">Red eye</span>
+                    <span className="home-text52">Red eye</span>
                   </div>
                   <div className="symptom">
-                    <span className="home-text60">Foot pain</span>
+                    <span className="home-text53">Foot pain</span>
                   </div>
                   <div className="symptom">
-                    <span className="home-text61">Foot swelling</span>
+                    <span className="home-text54">Foot swelling</span>
                   </div>
                   <div className="symptom">
-                    <span className="home-text62">Headache</span>
+                    <span className="home-text55">Headache</span>
                   </div>
                   <div className="symptom">
-                    <span className="home-text63">Heart palpitation</span>
+                    <span className="home-text56">Heart palpitation</span>
                   </div>
                 </div>
                 <div className="home-row2">
                   <div className="symptom">
-                    <span className="home-text64">Knee pain</span>
+                    <span className="home-text57">Knee pain</span>
                   </div>
                   <div className="symptom">
-                    <span className="home-text65">Hip pain</span>
+                    <span className="home-text58">Hip pain</span>
                   </div>
                   <div className="symptom">
-                    <span className="home-text66">Low back pain</span>
+                    <span className="home-text59">Low back pain</span>
                   </div>
                   <div className="symptom">
-                    <span className="home-text67">Nasal congestion</span>
+                    <span className="home-text60">Nasal congestion</span>
                   </div>
                   <div className="symptom">
-                    <span className="home-text68">Neck pain</span>
+                    <span className="home-text61">Neck pain</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <section id="book" className="home-book5">
+        <section id="book" className="home-book3">
           <div className="home-heading17">
-            <h2 className="home-text69">Book an appointment</h2>
-            <p className="home-text70">
+            <h2 className="home-text62">Book an appointment</h2>
+            <p className="home-text63">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt.
             </p>
@@ -627,10 +595,10 @@ const Home = (props) => {
           <div className="home-form">
             <div className="home-types1">
               <div className="book-type">
-                <span className="home-text71">In person appointment</span>
+                <span className="home-text64">In person appointment</span>
               </div>
               <div className="book-type">
-                <span className="home-text72">Virtual appointment</span>
+                <span className="home-text65">Virtual appointment</span>
               </div>
             </div>
             <div className="home-inputs">
@@ -661,7 +629,7 @@ const Home = (props) => {
                 <img
                   alt="image"
                   src="/Icons/calendar-2.svg"
-                  className="home-image19"
+                  className="home-image17"
                 />
               </div>
               <input
@@ -670,15 +638,15 @@ const Home = (props) => {
                 className="input book-input"
               />
               <div className="home-lower">
-                <p className="home-text73">
+                <p className="home-text66">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt.
                 </p>
-                <div className="home-button">
-                  <button className="home-book6 button button-main">
+                <div className="home-button1">
+                  <button className="home-book4 button button-main">
                     <span>Book</span>
                   </button>
-                  <p className="home-text75">
+                  <p className="home-text68">
                     <span>
                       Lorem ipsum dolor sit amet, consectetur
                       <span
@@ -687,7 +655,7 @@ const Home = (props) => {
                         }}
                       />
                     </span>
-                    <span className="home-text77">adipiscing elit</span>
+                    <span className="home-text70">adipiscing elit</span>
                     <span>
                       , sed do eiusmod tempor
                       <span
@@ -696,7 +664,7 @@ const Home = (props) => {
                         }}
                       />
                     </span>
-                    <span className="home-text79">incididunt</span>
+                    <span className="home-text72">incididunt</span>
                     <span>.</span>
                   </p>
                 </div>
@@ -706,8 +674,8 @@ const Home = (props) => {
         </section>
         <section className="home-meet">
           <div className="home-heading18">
-            <h2 className="home-text81">Meet our doctors</h2>
-            <p className="home-text82">
+            <h2 className="home-text74">Meet our doctors</h2>
+            <p className="home-text75">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt.
             </p>
@@ -740,26 +708,26 @@ const Home = (props) => {
               placeholder="Search by name"
               className="home-textinput5 input book-input"
             />
-            <button className="button button-main home-book7">
+            <button className="button button-main home-book5">
               <span>Search doctor</span>
             </button>
           </div>
         </section>
         <section className="home-news">
           <div className="home-heading19">
-            <h2 className="home-text84">Read our latest news</h2>
-            <p className="home-text85">
+            <h2 className="home-text77">Read our latest news</h2>
+            <p className="home-text78">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt.
             </p>
           </div>
           <div className="home-list2">
             <div className="home-item">
-              <div className="home-image20">
+              <div className="home-image18">
                 <img
                   alt="image"
                   src="/News/news-logo-1500w.png"
-                  className="home-image21"
+                  className="home-image19"
                 />
               </div>
               <div className="home-content09">
@@ -772,21 +740,21 @@ const Home = (props) => {
                   </p>
                 </div>
                 <div className="read-more">
-                  <span className="home-text86">Read more</span>
+                  <span className="home-text79">Read more</span>
                   <img
                     alt="image"
                     src="/Icons/arrow.svg"
-                    className="home-image22"
+                    className="home-image20"
                   />
                 </div>
               </div>
             </div>
             <div className="home-item1">
-              <div className="home-image23">
+              <div className="home-image21">
                 <img
                   alt="image"
                   src="/News/news-1-1500w.png"
-                  className="home-image24"
+                  className="home-image22"
                 />
               </div>
               <div className="home-content10">
@@ -798,21 +766,21 @@ const Home = (props) => {
                   </p>
                 </div>
                 <div className="read-more">
-                  <span className="home-text87">Read more</span>
+                  <span className="home-text80">Read more</span>
                   <img
                     alt="image"
                     src="/Icons/arrow-2.svg"
-                    className="home-image25"
+                    className="home-image23"
                   />
                 </div>
               </div>
             </div>
             <div className="home-item2">
-              <div className="home-image26">
+              <div className="home-image24">
                 <img
                   alt="image"
                   src="/News/news-2-1500w.png"
-                  className="home-image27"
+                  className="home-image25"
                 />
               </div>
               <div className="home-content11">
@@ -825,11 +793,11 @@ const Home = (props) => {
                   </p>
                 </div>
                 <div className="read-more">
-                  <span className="home-text88">Read more</span>
+                  <span className="home-text81">Read more</span>
                   <img
                     alt="image"
                     src="/Icons/arrow-2.svg"
-                    className="home-image28"
+                    className="home-image26"
                   />
                 </div>
               </div>
@@ -838,9 +806,9 @@ const Home = (props) => {
         </section>
         <div className="home-download">
           <div className="home-main1">
-            <img alt="image" src="/phone-1500w.png" className="home-image29" />
+            <img alt="image" src="/phone-1500w.png" className="home-image27" />
             <div className="home-content12">
-              <h2 className="home-text89">
+              <h2 className="home-text82">
                 Download our mobile app and book your next appointment
               </h2>
               <div className="home-buttons">
@@ -848,7 +816,7 @@ const Home = (props) => {
                   <img
                     alt="image"
                     src="/Icons/apple.svg"
-                    className="home-image30"
+                    className="home-image28"
                   />
                   <span>Download for iOS</span>
                 </button>
@@ -856,7 +824,7 @@ const Home = (props) => {
                   <img
                     alt="image"
                     src="/Icons/android.svg"
-                    className="home-image31"
+                    className="home-image29"
                   />
                   <span>Download for Android</span>
                 </button>
@@ -865,14 +833,14 @@ const Home = (props) => {
           </div>
         </div>
         <div className="home-footer">
-          <div className="home-left1">
+          <div className="home-left">
             <div className="home-brand">
               <img
                 alt="image"
                 src="/Branding/logo-2.svg"
-                className="home-image32"
+                className="home-image30"
               />
-              <p className="home-text92">
+              <p className="home-text85">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt.
               </p>
@@ -882,21 +850,21 @@ const Home = (props) => {
                 <img
                   alt="image"
                   src="/Icons/insider.svg"
-                  className="home-image33"
+                  className="home-image31"
                 />
               </div>
               <div className="social">
                 <img
                   alt="image"
                   src="/Icons/instagram.svg"
-                  className="home-image34"
+                  className="home-image32"
                 />
               </div>
               <div className="social">
                 <img
                   alt="image"
                   src="/Icons/twitter.svg"
-                  className="home-image35"
+                  className="home-image33"
                 />
               </div>
             </div>
@@ -908,39 +876,39 @@ const Home = (props) => {
               <span className="legal-link">Terms of Use</span>
             </div>
           </div>
-          <div className="home-right1">
+          <div className="home-right">
             <div className="home-list3">
-              <span className="home-header16">Menu</span>
-              <div className="home-links1">
-                <span className="home-link10">Home</span>
-                <span className="home-link11">About</span>
-                <span className="home-link12">Services</span>
-                <span className="home-link13">Blog</span>
-                <span className="home-link14">Support</span>
+              <span className="home-header17">Menu</span>
+              <div className="home-links">
+                <span className="home-link06">Home</span>
+                <span className="home-link07">About</span>
+                <span className="home-link08">Services</span>
+                <span className="home-link09">Blog</span>
+                <span className="home-link10">Support</span>
               </div>
             </div>
             <div className="home-list4">
-              <span className="home-header17">Resources</span>
-              <div className="home-links2">
-                <span className="home-link15">Test Results</span>
-                <span className="home-link16">Patients</span>
-                <span className="home-link17">Doctors</span>
-                <span className="home-link18">Health</span>
+              <span className="home-header18">Resources</span>
+              <div className="home-links1">
+                <span className="home-link11">Test Results</span>
+                <span className="home-link12">Patients</span>
+                <span className="home-link13">Doctors</span>
+                <span className="home-link14">Health</span>
               </div>
             </div>
             <div className="home-list5">
-              <span className="home-header18">Contact</span>
-              <div className="home-links3">
-                <span className="home-link19">
+              <span className="home-header19">Contact</span>
+              <div className="home-links2">
+                <span className="home-link15">
                   24 Street Name, City FI 01234, RO
                 </span>
                 <a
                   href="mailto:contact@template.new?subject=Main"
-                  className="home-link20"
+                  className="home-link16"
                 >
                   contact@template.new
                 </a>
-                <a href="tel:(004) 234 - 5678" className="home-link21">
+                <a href="tel:(004) 234 - 5678" className="home-link17">
                   (004) 234 - 5678
                 </a>
               </div>
@@ -957,7 +925,7 @@ const Home = (props) => {
           </div>
         </div>
         <div>
-          <div className="home-container03">
+          <div className="home-container4">
             <Script
               html={`<script>
 const modalOpen = document.querySelectorAll('[data-open]');
@@ -982,7 +950,7 @@ modalClose.forEach(button => {
           </div>
         </div>
         <div>
-          <div className="home-container05">
+          <div className="home-container6">
             <Script
               html={`<script>
 const dataLetters = document.querySelectorAll("[data-letter]");
@@ -1077,7 +1045,7 @@ const showResults = () => {
           </div>
         </div>
         <div>
-          <div className="home-container07">
+          <div className="home-container8">
             <Script
               html={`<script>
 function scroll(direction) {
@@ -1107,107 +1075,6 @@ buttons.forEach(button => {
             ></Script>
           </div>
         </div>
-        <header data-role="Header" className="home-header19">
-          <img
-            alt="logo"
-            src="https://presentation-website-assets.teleporthq.io/logos/logo.png"
-            className="home-image36"
-          />
-          <div className="home-nav2">
-            <NavigationLinks rootClassName="rootClassName17"></NavigationLinks>
-          </div>
-          <div data-role="BurgerMenu" className="home-burger-menu1">
-            <svg viewBox="0 0 1024 1024" className="home-icon05">
-              <path d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
-            </svg>
-          </div>
-          <div data-role="MobileMenu" className="home-mobile-menu1">
-            <div className="home-nav3">
-              <div className="home-container08">
-                <img
-                  alt="image"
-                  src="https://presentation-website-assets.teleporthq.io/logos/logo.png"
-                  className="home-image37"
-                />
-                <div
-                  data-role="CloseMobileMenu"
-                  className="home-close-mobile-menu"
-                >
-                  <svg viewBox="0 0 1024 1024" className="home-icon07">
-                    <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"></path>
-                  </svg>
-                </div>
-              </div>
-              <NavigationLinks rootClassName="rootClassName18"></NavigationLinks>
-            </div>
-            <div>
-              <svg viewBox="0 0 950.8571428571428 1024" className="home-icon09">
-                <path d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"></path>
-              </svg>
-              <svg viewBox="0 0 877.7142857142857 1024" className="home-icon11">
-                <path d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"></path>
-              </svg>
-              <svg viewBox="0 0 602.2582857142856 1024" className="home-icon13">
-                <path d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"></path>
-              </svg>
-            </div>
-          </div>
-          <header data-role="Header" className="home-header20">
-            <img
-              alt="logo"
-              src="https://presentation-website-assets.teleporthq.io/logos/logo.png"
-              className="home-image38"
-            />
-            <div className="home-nav4">
-              <NavigationLinks1 rootClassName="rootClassName17"></NavigationLinks1>
-            </div>
-            <div data-role="BurgerMenu" className="home-burger-menu2">
-              <svg viewBox="0 0 1024 1024" className="home-icon15">
-                <path d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
-              </svg>
-            </div>
-            <div data-role="MobileMenu" className="home-mobile-menu2">
-              <div className="home-nav5">
-                <div className="home-container09">
-                  <img
-                    alt="image"
-                    src="https://presentation-website-assets.teleporthq.io/logos/logo.png"
-                    className="home-image39"
-                  />
-                  <div
-                    data-role="CloseMobileMenu"
-                    className="home-close-mobile-menu1"
-                  >
-                    <svg viewBox="0 0 1024 1024" className="home-icon17">
-                      <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"></path>
-                    </svg>
-                  </div>
-                </div>
-                <NavigationLinks1 rootClassName="rootClassName18"></NavigationLinks1>
-              </div>
-              <div>
-                <svg
-                  viewBox="0 0 950.8571428571428 1024"
-                  className="home-icon19"
-                >
-                  <path d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"></path>
-                </svg>
-                <svg
-                  viewBox="0 0 877.7142857142857 1024"
-                  className="home-icon21"
-                >
-                  <path d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"></path>
-                </svg>
-                <svg
-                  viewBox="0 0 602.2582857142856 1024"
-                  className="home-icon23"
-                >
-                  <path d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"></path>
-                </svg>
-              </div>
-            </div>
-          </header>
-        </header>
       </div>
       <style jsx>
         {`
@@ -1479,128 +1346,45 @@ buttons.forEach(button => {
             width: 12px;
             object-fit: cover;
           }
-          .home-hero {
-            width: 100%;
-            height: 100vh;
-            display: flex;
-            position: relative;
-            align-items: center;
-            flex-direction: column;
-          }
-          .home-navbar {
+          .home-header07 {
             width: 100%;
             display: flex;
-            z-index: 100;
-            max-width: 1440px;
+            max-width: var(--dl-size-size-maxwidth);
             align-items: center;
-            padding-top: var(--dl-space-space-oneandhalfunits);
-            padding-left: var(--dl-space-space-fiveunits);
-            padding-right: var(--dl-space-space-fiveunits);
-            padding-bottom: var(--dl-space-space-oneandhalfunits);
+            padding-top: var(--dl-space-space-twounits);
+            padding-left: var(--dl-space-space-threeunits);
+            padding-right: var(--dl-space-space-threeunits);
+            padding-bottom: var(--dl-space-space-twounits);
             justify-content: space-between;
           }
-          .home-left {
-            gap: var(--dl-space-space-twounits);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-          }
-          .home-logo {
-            width: 165px;
-            object-fit: cover;
-          }
-          .home-links {
-            gap: var(--dl-space-space-oneandhalfunits);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-          }
-          .home-link {
-            cursor: pointer;
-            font-style: normal;
-            transition: 0.3s;
-            font-weight: 500;
-            line-height: 24px;
-            text-decoration: none;
-          }
-          .home-link:hover {
-            opacity: 0.5;
-          }
-          .home-link01 {
-            cursor: pointer;
-            font-style: normal;
-            transition: 0.3s;
-            font-weight: 500;
-            line-height: 24px;
-            text-decoration: none;
-          }
-          .home-link01:hover {
-            opacity: 0.5;
-          }
-          .home-link02 {
-            cursor: pointer;
-            font-style: normal;
-            transition: 0.3s;
-            font-weight: 500;
-            line-height: 24px;
-          }
-          .home-link02:hover {
-            opacity: 0.5;
-          }
-          .home-link03 {
-            cursor: pointer;
-            font-style: normal;
-            transition: 0.3s;
-            font-weight: 500;
-            line-height: 24px;
-            text-decoration: none;
-          }
-          .home-link03:hover {
-            opacity: 0.5;
-          }
-          .home-right {
-            gap: var(--dl-space-space-oneandhalfunits);
+          .home-container1 {
+            flex: 0 0 auto;
             display: flex;
             align-items: center;
             flex-direction: row;
-            justify-content: center;
-          }
-          .home-phone {
-            gap: var(--dl-space-space-halfunit);
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            border-width: 0px;
-            flex-direction: row;
-            justify-content: center;
           }
           .home-image06 {
-            width: 18px;
-            object-fit: cover;
+            height: 2rem;
           }
-          .home-text06 {
-            font-style: normal;
-            font-weight: 600;
-            line-height: 24px;
+          .home-nav {
+            display: flex;
+            align-items: center;
+            padding-left: var(--dl-space-space-twounits);
+            flex-direction: row;
           }
-          .home-book {
-            text-decoration: none;
-          }
-          .home-image07 {
-            width: 18px;
-            object-fit: cover;
-          }
-          .home-text07 {
-            font-family: Inter;
+          .home-btn-group {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            justify-content: space-between;
           }
           .home-burger-menu {
             display: none;
-            align-items: center;
-            justify-content: center;
           }
           .home-icon01 {
             width: var(--dl-size-size-xsmall);
             height: var(--dl-size-size-xsmall);
+            display: none;
           }
           .home-mobile-menu {
             top: 0px;
@@ -1609,28 +1393,28 @@ buttons.forEach(button => {
             height: 100vh;
             display: none;
             padding: 32px;
-            z-index: 1000;
-            position: fixed;
+            z-index: 100;
+            position: absolute;
             flex-direction: column;
             justify-content: space-between;
             background-color: #fff;
           }
-          .home-nav {
+          .home-nav1 {
             display: flex;
             align-items: flex-start;
             flex-direction: column;
           }
-          .home-container01 {
+          .home-container2 {
             width: 100%;
             display: flex;
             align-items: center;
             margin-bottom: var(--dl-space-space-threeunits);
             justify-content: space-between;
           }
-          .home-image08 {
+          .home-image07 {
             height: 2rem;
           }
-          .home-menu-close {
+          .home-close-mobile-menu {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -1639,33 +1423,27 @@ buttons.forEach(button => {
             width: var(--dl-size-size-xsmall);
             height: var(--dl-size-size-xsmall);
           }
-          .home-nav1 {
-            flex: 0 0 auto;
+          .home-icon05 {
+            width: var(--dl-size-size-xsmall);
+            height: var(--dl-size-size-xsmall);
+            margin-right: var(--dl-space-space-twounits);
+          }
+          .home-icon07 {
+            width: var(--dl-size-size-xsmall);
+            height: var(--dl-size-size-xsmall);
+            margin-right: var(--dl-space-space-twounits);
+          }
+          .home-icon09 {
+            width: var(--dl-size-size-xsmall);
+            height: var(--dl-size-size-xsmall);
+          }
+          .home-hero {
+            width: 100%;
+            height: 100vh;
             display: flex;
-            align-items: flex-start;
+            position: relative;
+            align-items: center;
             flex-direction: column;
-          }
-          .home-text08 {
-            margin-bottom: var(--dl-space-space-unit);
-          }
-          .home-text09 {
-            margin-bottom: var(--dl-space-space-unit);
-          }
-          .home-text10 {
-            margin-bottom: var(--dl-space-space-unit);
-          }
-          .home-text11 {
-            margin-bottom: var(--dl-space-space-unit);
-          }
-          .home-book1 {
-            text-decoration: none;
-          }
-          .home-image09 {
-            width: 18px;
-            object-fit: cover;
-          }
-          .home-text12 {
-            font-family: Inter;
           }
           .home-main {
             flex: 1;
@@ -1694,7 +1472,7 @@ buttons.forEach(button => {
             flex-direction: column;
             justify-content: center;
           }
-          .home-header07 {
+          .home-header08 {
             width: 100%;
             font-size: 62px;
             max-width: 750px;
@@ -1708,11 +1486,11 @@ buttons.forEach(button => {
             max-width: 600px;
             line-height: 27px;
           }
-          .home-image10 {
+          .home-image08 {
             width: 18px;
             object-fit: cover;
           }
-          .home-image11 {
+          .home-image09 {
             flex: 1;
             display: flex;
             align-items: flex-end;
@@ -1720,7 +1498,7 @@ buttons.forEach(button => {
             flex-direction: row;
             justify-content: center;
           }
-          .home-image12 {
+          .home-image10 {
             height: 95%;
             object-fit: cover;
           }
@@ -1748,6 +1526,7 @@ buttons.forEach(button => {
           .home-background {
             right: 0px;
             width: 37%;
+            border: 2px dashed rgba(120, 120, 120, 0.4);
             bottom: 0px;
             height: 100%;
             display: flex;
@@ -1775,12 +1554,12 @@ buttons.forEach(button => {
             align-items: flex-start;
             flex-direction: column;
           }
-          .home-text14 {
+          .home-text07 {
             font-size: 56px;
             font-style: normal;
             font-weight: 600;
           }
-          .home-text15 {
+          .home-text08 {
             font-size: 18px;
             max-width: 385px;
             line-height: 27px;
@@ -1844,14 +1623,14 @@ buttons.forEach(button => {
             flex-direction: column;
             justify-content: center;
           }
-          .home-header08 {
+          .home-header09 {
             font-size: 56px;
             max-width: 600px;
             font-style: normal;
             text-align: center;
             font-weight: 600;
           }
-          .home-header09 {
+          .home-header10 {
             font-size: 18px;
             max-width: 700px;
             text-align: center;
@@ -1894,7 +1673,7 @@ buttons.forEach(button => {
           .home-play:hover {
             background-color: rgba(0, 0, 0, 0.3);
           }
-          .home-image13 {
+          .home-image11 {
             width: 80px;
             object-fit: cover;
           }
@@ -1904,14 +1683,14 @@ buttons.forEach(button => {
             align-items: center;
             flex-direction: column;
           }
-          .home-header10 {
+          .home-header11 {
             font-size: 24px;
             font-style: normal;
             text-align: center;
             font-weight: 600;
             line-height: 36px;
           }
-          .home-header11 {
+          .home-header12 {
             max-width: 600px;
             text-align: center;
             line-height: 24px;
@@ -1942,7 +1721,7 @@ buttons.forEach(button => {
             flex-direction: column;
             justify-content: flex-start;
           }
-          .home-header12 {
+          .home-header13 {
             gap: var(--dl-space-space-unit);
             display: flex;
             align-items: flex-start;
@@ -1960,16 +1739,16 @@ buttons.forEach(button => {
             max-width: 600px;
             line-height: 27px;
           }
-          .home-text17 {
+          .home-text10 {
             font-style: normal;
             font-weight: 600;
             line-height: 24px;
           }
-          .home-image14 {
+          .home-image12 {
             width: 12px;
             object-fit: cover;
           }
-          .home-image15 {
+          .home-image13 {
             width: 400px;
             object-fit: cover;
           }
@@ -1980,6 +1759,10 @@ buttons.forEach(button => {
             flex-direction: row-reverse;
             justify-content: space-between;
           }
+          .home-image14 {
+            width: 520px;
+            object-fit: cover;
+          }
           .home-content05 {
             gap: var(--dl-space-space-oneandhalfunits);
             display: flex;
@@ -1987,7 +1770,7 @@ buttons.forEach(button => {
             flex-direction: column;
             justify-content: flex-start;
           }
-          .home-header13 {
+          .home-header14 {
             gap: var(--dl-space-space-unit);
             display: flex;
             align-items: flex-start;
@@ -2005,17 +1788,13 @@ buttons.forEach(button => {
             max-width: 600px;
             line-height: 27px;
           }
-          .home-text18 {
+          .home-text11 {
             font-style: normal;
             font-weight: 600;
             line-height: 24px;
           }
-          .home-image16 {
+          .home-image15 {
             width: 12px;
-            object-fit: cover;
-          }
-          .home-image17 {
-            width: 520px;
             object-fit: cover;
           }
           .home-section8 {
@@ -2032,7 +1811,7 @@ buttons.forEach(button => {
             flex-direction: column;
             justify-content: flex-start;
           }
-          .home-header14 {
+          .home-header15 {
             gap: var(--dl-space-space-unit);
             display: flex;
             align-items: flex-start;
@@ -2050,11 +1829,11 @@ buttons.forEach(button => {
             max-width: 600px;
             line-height: 27px;
           }
-          .home-image18 {
+          .home-image16 {
             width: 580px;
             object-fit: cover;
           }
-          .home-book4 {
+          .home-book2 {
             display: none;
           }
           .home-schedule {
@@ -2077,7 +1856,7 @@ buttons.forEach(button => {
             flex-direction: column;
             background-color: #2461ff;
           }
-          .home-header15 {
+          .home-header16 {
             gap: var(--dl-space-space-unit);
             display: flex;
             align-items: center;
@@ -2127,13 +1906,13 @@ buttons.forEach(button => {
             align-items: flex-start;
             flex-direction: column;
           }
-          .home-text23 {
+          .home-text16 {
             font-size: 56px;
             max-width: 385px;
             font-style: normal;
             font-weight: 600;
           }
-          .home-text24 {
+          .home-text17 {
             font-size: 18px;
             max-width: 385px;
             line-height: 27px;
@@ -2164,6 +1943,48 @@ buttons.forEach(button => {
             align-items: center;
             justify-content: center;
             grid-template-columns: repeat(10, minmax(60px, 1fr));
+          }
+          .home-text18 {
+            font-size: 20px;
+            font-style: normal;
+            font-family: Inter;
+            font-weight: 600;
+          }
+          .home-text19 {
+            font-size: 20px;
+            font-style: normal;
+            font-family: Inter;
+            font-weight: 600;
+          }
+          .home-text20 {
+            font-size: 20px;
+            font-style: normal;
+            font-family: Inter;
+            font-weight: 600;
+          }
+          .home-text21 {
+            font-size: 20px;
+            font-style: normal;
+            font-family: Inter;
+            font-weight: 600;
+          }
+          .home-text22 {
+            font-size: 20px;
+            font-style: normal;
+            font-family: Inter;
+            font-weight: 600;
+          }
+          .home-text23 {
+            font-size: 20px;
+            font-style: normal;
+            font-family: Inter;
+            font-weight: 600;
+          }
+          .home-text24 {
+            font-size: 20px;
+            font-style: normal;
+            font-family: Inter;
+            font-weight: 600;
           }
           .home-text25 {
             font-size: 20px;
@@ -2280,48 +2101,6 @@ buttons.forEach(button => {
             font-weight: 600;
           }
           .home-text44 {
-            font-size: 20px;
-            font-style: normal;
-            font-family: Inter;
-            font-weight: 600;
-          }
-          .home-text45 {
-            font-size: 20px;
-            font-style: normal;
-            font-family: Inter;
-            font-weight: 600;
-          }
-          .home-text46 {
-            font-size: 20px;
-            font-style: normal;
-            font-family: Inter;
-            font-weight: 600;
-          }
-          .home-text47 {
-            font-size: 20px;
-            font-style: normal;
-            font-family: Inter;
-            font-weight: 600;
-          }
-          .home-text48 {
-            font-size: 20px;
-            font-style: normal;
-            font-family: Inter;
-            font-weight: 600;
-          }
-          .home-text49 {
-            font-size: 20px;
-            font-style: normal;
-            font-family: Inter;
-            font-weight: 600;
-          }
-          .home-text50 {
-            font-size: 20px;
-            font-style: normal;
-            font-family: Inter;
-            font-weight: 600;
-          }
-          .home-text51 {
             max-width: 700px;
             line-height: 24px;
           }
@@ -2362,12 +2141,12 @@ buttons.forEach(button => {
             flex-direction: column;
             justify-content: flex-start;
           }
-          .home-text52 {
+          .home-text45 {
             font-size: 30px;
             font-style: normal;
             font-weight: 600;
           }
-          .home-text53 {
+          .home-text46 {
             max-width: 700px;
             line-height: 24px;
           }
@@ -2388,6 +2167,55 @@ buttons.forEach(button => {
             flex-direction: row;
             justify-content: flex-start;
           }
+          .home-text47 {
+            font-style: normal;
+            font-family: Inter;
+            font-weight: 600;
+            white-space: nowrap;
+          }
+          .home-text48 {
+            font-style: normal;
+            font-family: Inter;
+            font-weight: 600;
+            white-space: nowrap;
+          }
+          .home-text49 {
+            font-style: normal;
+            font-family: Inter;
+            font-weight: 600;
+            white-space: nowrap;
+          }
+          .home-text50 {
+            font-style: normal;
+            font-family: Inter;
+            font-weight: 600;
+            white-space: nowrap;
+          }
+          .home-text51 {
+            font-style: normal;
+            font-family: Inter;
+            font-weight: 600;
+            white-space: nowrap;
+          }
+          .home-row1 {
+            gap: var(--dl-space-space-unit);
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            justify-content: flex-start;
+          }
+          .home-text52 {
+            font-style: normal;
+            font-family: Inter;
+            font-weight: 600;
+            white-space: nowrap;
+          }
+          .home-text53 {
+            font-style: normal;
+            font-family: Inter;
+            font-weight: 600;
+            white-space: nowrap;
+          }
           .home-text54 {
             font-style: normal;
             font-family: Inter;
@@ -2406,6 +2234,13 @@ buttons.forEach(button => {
             font-weight: 600;
             white-space: nowrap;
           }
+          .home-row2 {
+            gap: var(--dl-space-space-unit);
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            justify-content: flex-start;
+          }
           .home-text57 {
             font-style: normal;
             font-family: Inter;
@@ -2417,13 +2252,6 @@ buttons.forEach(button => {
             font-family: Inter;
             font-weight: 600;
             white-space: nowrap;
-          }
-          .home-row1 {
-            gap: var(--dl-space-space-unit);
-            display: flex;
-            align-items: center;
-            flex-direction: row;
-            justify-content: flex-start;
           }
           .home-text59 {
             font-style: normal;
@@ -2443,56 +2271,7 @@ buttons.forEach(button => {
             font-weight: 600;
             white-space: nowrap;
           }
-          .home-text62 {
-            font-style: normal;
-            font-family: Inter;
-            font-weight: 600;
-            white-space: nowrap;
-          }
-          .home-text63 {
-            font-style: normal;
-            font-family: Inter;
-            font-weight: 600;
-            white-space: nowrap;
-          }
-          .home-row2 {
-            gap: var(--dl-space-space-unit);
-            display: flex;
-            align-items: center;
-            flex-direction: row;
-            justify-content: flex-start;
-          }
-          .home-text64 {
-            font-style: normal;
-            font-family: Inter;
-            font-weight: 600;
-            white-space: nowrap;
-          }
-          .home-text65 {
-            font-style: normal;
-            font-family: Inter;
-            font-weight: 600;
-            white-space: nowrap;
-          }
-          .home-text66 {
-            font-style: normal;
-            font-family: Inter;
-            font-weight: 600;
-            white-space: nowrap;
-          }
-          .home-text67 {
-            font-style: normal;
-            font-family: Inter;
-            font-weight: 600;
-            white-space: nowrap;
-          }
-          .home-text68 {
-            font-style: normal;
-            font-family: Inter;
-            font-weight: 600;
-            white-space: nowrap;
-          }
-          .home-book5 {
+          .home-book3 {
             gap: var(--dl-space-space-fiveunits);
             width: 100%;
             display: flex;
@@ -2513,14 +2292,14 @@ buttons.forEach(button => {
             align-items: center;
             flex-direction: column;
           }
-          .home-text69 {
+          .home-text62 {
             font-size: 56px;
             max-width: 600px;
             font-style: normal;
             text-align: center;
             font-weight: 600;
           }
-          .home-text70 {
+          .home-text63 {
             font-size: 18px;
             max-width: 700px;
             text-align: center;
@@ -2541,13 +2320,13 @@ buttons.forEach(button => {
             flex-direction: row;
             justify-content: center;
           }
-          .home-text71 {
+          .home-text64 {
             font-style: normal;
             font-family: Inter;
             font-weight: 600;
             white-space: nowrap;
           }
-          .home-text72 {
+          .home-text65 {
             font-style: normal;
             font-family: Inter;
             font-weight: 600;
@@ -2569,7 +2348,7 @@ buttons.forEach(button => {
             flex-direction: row;
             justify-content: center;
           }
-          .home-image19 {
+          .home-image17 {
             width: 20px;
             object-fit: cover;
             border-color: #b4b9c6;
@@ -2584,13 +2363,13 @@ buttons.forEach(button => {
             flex-direction: column;
             justify-content: flex-start;
           }
-          .home-text73 {
+          .home-text66 {
             font-size: 10px;
             max-width: 700px;
             text-align: left;
             line-height: 15px;
           }
-          .home-button {
+          .home-button1 {
             gap: var(--dl-space-space-oneandhalfunits);
             width: 100%;
             display: flex;
@@ -2598,21 +2377,21 @@ buttons.forEach(button => {
             flex-direction: column;
             justify-content: flex-start;
           }
-          .home-book6 {
+          .home-book4 {
             width: 100%;
           }
-          .home-text75 {
+          .home-text68 {
             font-size: 10px;
             max-width: 700px;
             text-align: left;
             line-height: 15px;
           }
-          .home-text77 {
+          .home-text70 {
             color: #2461ff;
             font-style: normal;
             font-weight: 600;
           }
-          .home-text79 {
+          .home-text72 {
             color: #2461ff;
             font-style: normal;
             font-weight: 600;
@@ -2635,14 +2414,14 @@ buttons.forEach(button => {
             align-items: center;
             flex-direction: column;
           }
-          .home-text81 {
+          .home-text74 {
             font-size: 56px;
             max-width: 600px;
             font-style: normal;
             text-align: center;
             font-weight: 600;
           }
-          .home-text82 {
+          .home-text75 {
             font-size: 18px;
             max-width: 700px;
             text-align: center;
@@ -2702,14 +2481,14 @@ buttons.forEach(button => {
             align-items: center;
             flex-direction: column;
           }
-          .home-text84 {
+          .home-text77 {
             font-size: 56px;
             max-width: 600px;
             font-style: normal;
             text-align: center;
             font-weight: 600;
           }
-          .home-text85 {
+          .home-text78 {
             font-size: 18px;
             max-width: 700px;
             text-align: center;
@@ -2732,7 +2511,7 @@ buttons.forEach(button => {
             flex-direction: column;
             background-color: #2461ff;
           }
-          .home-image20 {
+          .home-image18 {
             width: 100%;
             height: 275px;
             display: flex;
@@ -2740,7 +2519,7 @@ buttons.forEach(button => {
             flex-direction: column;
             justify-content: center;
           }
-          .home-image21 {
+          .home-image19 {
             height: 50px;
             object-fit: cover;
           }
@@ -2769,13 +2548,13 @@ buttons.forEach(button => {
             font-style: normal;
             font-weight: 500;
           }
-          .home-text86 {
+          .home-text79 {
             color: rgb(255, 255, 255);
             font-style: normal;
             font-weight: 600;
             line-height: 24px;
           }
-          .home-image22 {
+          .home-image20 {
             width: 12px;
             object-fit: cover;
           }
@@ -2787,7 +2566,7 @@ buttons.forEach(button => {
             flex-direction: column;
             background-color: #f5f5f7;
           }
-          .home-image23 {
+          .home-image21 {
             width: 100%;
             height: 274px;
             display: flex;
@@ -2795,7 +2574,7 @@ buttons.forEach(button => {
             flex-direction: column;
             justify-content: center;
           }
-          .home-image24 {
+          .home-image22 {
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -2825,13 +2604,13 @@ buttons.forEach(button => {
             font-style: normal;
             font-weight: 500;
           }
-          .home-text87 {
+          .home-text80 {
             color: #000000;
             font-style: normal;
             font-weight: 600;
             line-height: 24px;
           }
-          .home-image25 {
+          .home-image23 {
             width: 12px;
             object-fit: cover;
           }
@@ -2843,7 +2622,7 @@ buttons.forEach(button => {
             flex-direction: column;
             background-color: #f5f5f7;
           }
-          .home-image26 {
+          .home-image24 {
             width: 100%;
             height: 274px;
             display: flex;
@@ -2851,7 +2630,7 @@ buttons.forEach(button => {
             flex-direction: column;
             justify-content: center;
           }
-          .home-image27 {
+          .home-image25 {
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -2881,13 +2660,13 @@ buttons.forEach(button => {
             font-style: normal;
             font-weight: 500;
           }
-          .home-text88 {
+          .home-text81 {
             color: #000000;
             font-style: normal;
             font-weight: 600;
             line-height: 24px;
           }
-          .home-image28 {
+          .home-image26 {
             width: 12px;
             object-fit: cover;
           }
@@ -2905,7 +2684,7 @@ buttons.forEach(button => {
             justify-content: center;
             background-color: #d0f4fd;
           }
-          .home-image29 {
+          .home-image27 {
             height: 565px;
             margin-top: -80px;
             object-fit: cover;
@@ -2921,7 +2700,7 @@ buttons.forEach(button => {
             padding-bottom: 120px;
             justify-content: center;
           }
-          .home-text89 {
+          .home-text82 {
             font-size: 40px;
             max-width: 600px;
             font-style: normal;
@@ -2937,11 +2716,11 @@ buttons.forEach(button => {
           .home-i-os {
             gap: var(--dl-space-space-halfunit);
           }
-          .home-image30 {
+          .home-image28 {
             width: 16px;
             object-fit: cover;
           }
-          .home-image31 {
+          .home-image29 {
             width: 16px;
             object-fit: cover;
           }
@@ -2957,7 +2736,7 @@ buttons.forEach(button => {
             justify-content: space-between;
             background-color: #000000;
           }
-          .home-left1 {
+          .home-left {
             gap: var(--dl-space-space-threeunits);
             display: flex;
             align-items: flex-start;
@@ -2971,11 +2750,11 @@ buttons.forEach(button => {
             align-items: flex-start;
             flex-direction: column;
           }
-          .home-image32 {
+          .home-image30 {
             width: 165px;
             object-fit: cover;
           }
-          .home-text92 {
+          .home-text85 {
             color: rgb(255, 255, 255);
             font-size: 14px;
             line-height: 21px;
@@ -2987,15 +2766,15 @@ buttons.forEach(button => {
             align-items: flex-start;
             flex-direction: row;
           }
+          .home-image31 {
+            width: 24px;
+            object-fit: cover;
+          }
+          .home-image32 {
+            width: 24px;
+            object-fit: cover;
+          }
           .home-image33 {
-            width: 24px;
-            object-fit: cover;
-          }
-          .home-image34 {
-            width: 24px;
-            object-fit: cover;
-          }
-          .home-image35 {
             width: 24px;
             object-fit: cover;
           }
@@ -3010,7 +2789,7 @@ buttons.forEach(button => {
             color: rgb(255, 255, 255);
             font-size: 12px;
           }
-          .home-right1 {
+          .home-right {
             gap: 140px;
             display: flex;
             align-items: flex-start;
@@ -3024,7 +2803,66 @@ buttons.forEach(button => {
             align-items: flex-start;
             flex-direction: column;
           }
-          .home-header16 {
+          .home-header17 {
+            color: rgb(255, 255, 255);
+            font-style: normal;
+            font-weight: 600;
+          }
+          .home-links {
+            gap: 12px;
+            width: 100%;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+          }
+          .home-link06 {
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            transition: 0.3s;
+          }
+          .home-link06:hover {
+            opacity: 0.5;
+          }
+          .home-link07 {
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            transition: 0.3s;
+          }
+          .home-link07:hover {
+            opacity: 0.5;
+          }
+          .home-link08 {
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            transition: 0.3s;
+          }
+          .home-link08:hover {
+            opacity: 0.5;
+          }
+          .home-link09 {
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            transition: 0.3s;
+          }
+          .home-link09:hover {
+            opacity: 0.5;
+          }
+          .home-link10 {
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            transition: 0.3s;
+          }
+          .home-link10:hover {
+            opacity: 0.5;
+          }
+          .home-list4 {
+            gap: var(--dl-space-space-unit);
+            flex: 1;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+          }
+          .home-header18 {
             color: rgb(255, 255, 255);
             font-style: normal;
             font-weight: 600;
@@ -3035,14 +2873,6 @@ buttons.forEach(button => {
             display: flex;
             align-items: flex-start;
             flex-direction: column;
-          }
-          .home-link10 {
-            color: rgb(255, 255, 255);
-            cursor: pointer;
-            transition: 0.3s;
-          }
-          .home-link10:hover {
-            opacity: 0.5;
           }
           .home-link11 {
             color: rgb(255, 255, 255);
@@ -3076,14 +2906,14 @@ buttons.forEach(button => {
           .home-link14:hover {
             opacity: 0.5;
           }
-          .home-list4 {
+          .home-list5 {
             gap: var(--dl-space-space-unit);
             flex: 1;
             display: flex;
             align-items: flex-start;
             flex-direction: column;
           }
-          .home-header17 {
+          .home-header19 {
             color: rgb(255, 255, 255);
             font-style: normal;
             font-weight: 600;
@@ -3097,6 +2927,7 @@ buttons.forEach(button => {
           }
           .home-link15 {
             color: rgb(255, 255, 255);
+            width: 215px;
             cursor: pointer;
             transition: 0.3s;
           }
@@ -3105,74 +2936,22 @@ buttons.forEach(button => {
           }
           .home-link16 {
             color: rgb(255, 255, 255);
+            width: 215px;
             cursor: pointer;
             transition: 0.3s;
+            text-decoration: none;
           }
           .home-link16:hover {
             opacity: 0.5;
           }
           .home-link17 {
             color: rgb(255, 255, 255);
+            width: 215px;
             cursor: pointer;
             transition: 0.3s;
+            text-decoration: none;
           }
           .home-link17:hover {
-            opacity: 0.5;
-          }
-          .home-link18 {
-            color: rgb(255, 255, 255);
-            cursor: pointer;
-            transition: 0.3s;
-          }
-          .home-link18:hover {
-            opacity: 0.5;
-          }
-          .home-list5 {
-            gap: var(--dl-space-space-unit);
-            flex: 1;
-            display: flex;
-            align-items: flex-start;
-            flex-direction: column;
-          }
-          .home-header18 {
-            color: rgb(255, 255, 255);
-            font-style: normal;
-            font-weight: 600;
-          }
-          .home-links3 {
-            gap: 12px;
-            width: 100%;
-            display: flex;
-            align-items: flex-start;
-            flex-direction: column;
-          }
-          .home-link19 {
-            color: rgb(255, 255, 255);
-            width: 215px;
-            cursor: pointer;
-            transition: 0.3s;
-          }
-          .home-link19:hover {
-            opacity: 0.5;
-          }
-          .home-link20 {
-            color: rgb(255, 255, 255);
-            width: 215px;
-            cursor: pointer;
-            transition: 0.3s;
-            text-decoration: none;
-          }
-          .home-link20:hover {
-            opacity: 0.5;
-          }
-          .home-link21 {
-            color: rgb(255, 255, 255);
-            width: 215px;
-            cursor: pointer;
-            transition: 0.3s;
-            text-decoration: none;
-          }
-          .home-link21:hover {
             opacity: 0.5;
           }
           .home-legal1 {
@@ -3189,195 +2968,22 @@ buttons.forEach(button => {
             color: rgb(255, 255, 255);
             font-size: 12px;
           }
-          .home-container03 {
+          .home-container4 {
             display: contents;
           }
-          .home-container05 {
+          .home-container6 {
             display: contents;
           }
-          .home-container07 {
+          .home-container8 {
             display: contents;
-          }
-          .home-header19 {
-            width: 100%;
-            display: flex;
-            max-width: var(--dl-size-size-maxwidth);
-            align-items: center;
-            padding-top: var(--dl-space-space-twounits);
-            padding-left: var(--dl-space-space-threeunits);
-            padding-right: var(--dl-space-space-threeunits);
-            padding-bottom: var(--dl-space-space-twounits);
-            justify-content: space-between;
-          }
-          .home-image36 {
-            height: 2rem;
-          }
-          .home-nav2 {
-            flex: 0 0 auto;
-            display: flex;
-            align-items: center;
-            flex-direction: row;
-          }
-          .home-burger-menu1 {
-            display: none;
-          }
-          .home-icon05 {
-            width: var(--dl-size-size-xsmall);
-            height: var(--dl-size-size-xsmall);
-            display: flex;
-          }
-          .home-mobile-menu1 {
-            top: 0px;
-            left: 0px;
-            width: 100%;
-            height: 100vh;
-            display: none;
-            padding: 32px;
-            z-index: 100;
-            position: absolute;
-            flex-direction: column;
-            justify-content: space-between;
-            background-color: #fff;
-          }
-          .home-nav3 {
-            display: flex;
-            align-items: flex-start;
-            flex-direction: column;
-          }
-          .home-container08 {
-            width: 100%;
-            display: flex;
-            align-items: center;
-            margin-bottom: var(--dl-space-space-threeunits);
-            justify-content: space-between;
-          }
-          .home-image37 {
-            height: 2rem;
-          }
-          .home-close-mobile-menu {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-          }
-          .home-icon07 {
-            width: var(--dl-size-size-xsmall);
-            height: var(--dl-size-size-xsmall);
-          }
-          .home-icon09 {
-            width: var(--dl-size-size-xsmall);
-            height: var(--dl-size-size-xsmall);
-            margin-right: var(--dl-space-space-twounits);
-          }
-          .home-icon11 {
-            width: var(--dl-size-size-xsmall);
-            height: var(--dl-size-size-xsmall);
-            margin-right: var(--dl-space-space-twounits);
-          }
-          .home-icon13 {
-            width: var(--dl-size-size-xsmall);
-            height: var(--dl-size-size-xsmall);
-          }
-          .home-header20 {
-            width: 100%;
-            display: flex;
-            max-width: var(--dl-size-size-maxwidth);
-            align-items: center;
-            padding-top: var(--dl-space-space-twounits);
-            padding-left: var(--dl-space-space-threeunits);
-            padding-right: var(--dl-space-space-threeunits);
-            padding-bottom: var(--dl-space-space-twounits);
-            justify-content: space-between;
-          }
-          .home-image38 {
-            height: 2rem;
-          }
-          .home-nav4 {
-            flex: 0 0 auto;
-            display: flex;
-            align-items: center;
-            flex-direction: row;
-          }
-          .home-burger-menu2 {
-            display: none;
-          }
-          .home-icon15 {
-            width: var(--dl-size-size-xsmall);
-            height: var(--dl-size-size-xsmall);
-            display: flex;
-          }
-          .home-mobile-menu2 {
-            top: 0px;
-            left: 0px;
-            width: 100%;
-            height: 100vh;
-            display: none;
-            padding: 32px;
-            z-index: 100;
-            position: absolute;
-            flex-direction: column;
-            justify-content: space-between;
-            background-color: #fff;
-          }
-          .home-nav5 {
-            display: flex;
-            align-items: flex-start;
-            flex-direction: column;
-          }
-          .home-container09 {
-            width: 100%;
-            display: flex;
-            align-items: center;
-            margin-bottom: var(--dl-space-space-threeunits);
-            justify-content: space-between;
-          }
-          .home-image39 {
-            height: 2rem;
-          }
-          .home-close-mobile-menu1 {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-          }
-          .home-icon17 {
-            width: var(--dl-size-size-xsmall);
-            height: var(--dl-size-size-xsmall);
-          }
-          .home-icon19 {
-            width: var(--dl-size-size-xsmall);
-            height: var(--dl-size-size-xsmall);
-            margin-right: var(--dl-space-space-twounits);
-          }
-          .home-icon21 {
-            width: var(--dl-size-size-xsmall);
-            height: var(--dl-size-size-xsmall);
-            margin-right: var(--dl-space-space-twounits);
-          }
-          .home-icon23 {
-            width: var(--dl-size-size-xsmall);
-            height: var(--dl-size-size-xsmall);
           }
           @media (max-width: 991px) {
+            .home-icon01 {
+              display: flex;
+            }
             .home-hero {
               flex: 1;
               height: 0px;
-            }
-            .home-navbar {
-              z-index: 1000;
-            }
-            .home-links {
-              display: none;
-            }
-            .home-right {
-              display: none;
-            }
-            .home-burger-menu {
-              display: flex;
-              padding: var(--dl-space-space-unit);
-              border-radius: var(--dl-radius-radius-round);
-              background-color: #2461ff;
-            }
-            .home-icon01 {
-              fill: white;
             }
             .home-main {
               flex-direction: column;
@@ -3386,13 +2992,13 @@ buttons.forEach(button => {
               padding-top: 0px;
               padding-bottom: 0px;
             }
-            .home-header07 {
+            .home-header08 {
               max-width: 75%;
             }
             .home-caption6 {
               max-width: 75%;
             }
-            .home-image11 {
+            .home-image09 {
               flex: 0 0 auto;
               align-items: flex-end;
               padding-right: var(--dl-space-space-twounits);
@@ -3429,7 +3035,7 @@ buttons.forEach(button => {
               flex-direction: column;
               justify-content: flex-start;
             }
-            .home-image15 {
+            .home-image13 {
               width: 100%;
             }
             .home-section7 {
@@ -3438,7 +3044,7 @@ buttons.forEach(button => {
               flex-direction: column;
               justify-content: flex-start;
             }
-            .home-image17 {
+            .home-image14 {
               width: 100%;
             }
             .home-section8 {
@@ -3447,7 +3053,7 @@ buttons.forEach(button => {
               flex-direction: column;
               justify-content: flex-start;
             }
-            .home-image18 {
+            .home-image16 {
               width: 100%;
             }
             .home-schedule {
@@ -3471,11 +3077,11 @@ buttons.forEach(button => {
             .home-heading14 {
               align-items: center;
             }
-            .home-text23 {
+            .home-text16 {
               max-width: 100%;
               text-align: center;
             }
-            .home-text24 {
+            .home-text17 {
               text-align: center;
             }
             .home-content08 {
@@ -3496,7 +3102,7 @@ buttons.forEach(button => {
               padding-left: var(--dl-space-space-fiveunits);
               padding-right: var(--dl-space-space-fiveunits);
             }
-            .home-text51 {
+            .home-text44 {
               text-align: center;
             }
             .home-type-two {
@@ -3505,10 +3111,10 @@ buttons.forEach(button => {
             .home-heading16 {
               align-items: center;
             }
-            .home-text52 {
+            .home-text45 {
               text-align: center;
             }
-            .home-text53 {
+            .home-text46 {
               text-align: center;
             }
             .home-symptoms {
@@ -3551,7 +3157,7 @@ buttons.forEach(button => {
               padding-right: var(--dl-space-space-fiveunits);
               flex-direction: column;
             }
-            .home-book7 {
+            .home-book5 {
               width: 100%;
             }
             .home-list2 {
@@ -3561,7 +3167,7 @@ buttons.forEach(button => {
             .home-item {
               height: auto;
             }
-            .home-image20 {
+            .home-image18 {
               height: 280px;
             }
             .home-content09 {
@@ -3578,7 +3184,7 @@ buttons.forEach(button => {
             .home-item1 {
               height: auto;
             }
-            .home-image23 {
+            .home-image21 {
               height: 280px;
             }
             .home-content10 {
@@ -3592,7 +3198,7 @@ buttons.forEach(button => {
             .home-item2 {
               height: auto;
             }
-            .home-image26 {
+            .home-image24 {
               height: 280px;
             }
             .home-content11 {
@@ -3613,7 +3219,7 @@ buttons.forEach(button => {
               flex-direction: column;
               justify-content: flex-start;
             }
-            .home-left1 {
+            .home-left {
               padding-right: 0px;
             }
             .home-socials {
@@ -3622,7 +3228,7 @@ buttons.forEach(button => {
             .home-legal {
               display: none;
             }
-            .home-right1 {
+            .home-right {
               gap: var(--dl-space-space-twounits);
               flex-direction: column;
             }
@@ -3636,13 +3242,20 @@ buttons.forEach(button => {
             }
           }
           @media (max-width: 767px) {
-            .home-navbar {
-              padding-left: var(--dl-space-space-oneandhalfunits);
-              padding-right: var(--dl-space-space-oneandhalfunits);
-              padding-bottom: var(--dl-space-space-unit);
+            .home-header07 {
+              padding-left: var(--dl-space-space-twounits);
+              padding-right: var(--dl-space-space-twounits);
+            }
+            .home-nav {
+              display: none;
+            }
+            .home-btn-group {
+              display: none;
             }
             .home-burger-menu {
               display: flex;
+              align-items: center;
+              justify-content: center;
             }
             .home-main {
               gap: var(--dl-space-space-threeunits);
@@ -3650,7 +3263,7 @@ buttons.forEach(button => {
               padding-left: var(--dl-space-space-oneandhalfunits);
               justify-content: center;
             }
-            .home-header07 {
+            .home-header08 {
               font-size: 32px;
               max-width: 70%;
               line-height: 38px;
@@ -3673,11 +3286,11 @@ buttons.forEach(button => {
             .home-heading08 {
               gap: var(--dl-space-space-unit);
             }
-            .home-text14 {
+            .home-text07 {
               font-size: 30px;
               line-height: 36px;
             }
-            .home-text15 {
+            .home-text08 {
               font-size: 14px;
               line-height: 21px;
             }
@@ -3696,11 +3309,11 @@ buttons.forEach(button => {
               padding-right: var(--dl-space-space-oneandhalfunits);
               padding-bottom: var(--dl-space-space-fourunits);
             }
-            .home-header08 {
+            .home-header09 {
               font-size: 30px;
               line-height: 36px;
             }
-            .home-header09 {
+            .home-header10 {
               font-size: 14px;
               max-width: 60%;
               line-height: 21px;
@@ -3708,11 +3321,11 @@ buttons.forEach(button => {
             .home-content03 {
               gap: var(--dl-space-space-twounits);
             }
-            .home-header10 {
+            .home-header11 {
               font-size: 22px;
               line-height: 33px;
             }
-            .home-header11 {
+            .home-header12 {
               font-size: 14px;
               line-height: 21px;
             }
@@ -3752,10 +3365,10 @@ buttons.forEach(button => {
               max-width: 80%;
               line-height: 21px;
             }
-            .home-book3 {
+            .home-book1 {
               display: none;
             }
-            .home-book4 {
+            .home-book2 {
               width: 100%;
               display: flex;
             }
@@ -3794,11 +3407,11 @@ buttons.forEach(button => {
             .home-heading14 {
               gap: var(--dl-space-space-unit);
             }
-            .home-text23 {
+            .home-text16 {
               font-size: 30px;
               line-height: 36px;
             }
-            .home-text24 {
+            .home-text17 {
               font-size: 14px;
               max-width: 80%;
               line-height: 21px;
@@ -3811,7 +3424,7 @@ buttons.forEach(button => {
               padding-left: var(--dl-space-space-threeunits);
               padding-right: var(--dl-space-space-threeunits);
             }
-            .home-book5 {
+            .home-book3 {
               gap: var(--dl-space-space-twounits);
               padding-top: var(--dl-space-space-fourunits);
               padding-left: var(--dl-space-space-oneandhalfunits);
@@ -3821,10 +3434,10 @@ buttons.forEach(button => {
             .home-heading17 {
               gap: var(--dl-space-space-unit);
             }
-            .home-text69 {
+            .home-text62 {
               font-size: 24px;
             }
-            .home-text70 {
+            .home-text63 {
               font-size: 14px;
               max-width: 80%;
               line-height: 21px;
@@ -3849,10 +3462,10 @@ buttons.forEach(button => {
               gap: var(--dl-space-space-unit);
               padding-right: 0px;
             }
-            .home-text81 {
+            .home-text74 {
               font-size: 24px;
             }
-            .home-text82 {
+            .home-text75 {
               font-size: 14px;
               max-width: 80%;
             }
@@ -3877,11 +3490,11 @@ buttons.forEach(button => {
             .home-heading19 {
               gap: var(--dl-space-space-unit);
             }
-            .home-text84 {
+            .home-text77 {
               font-size: 30px;
               line-height: 36px;
             }
-            .home-text85 {
+            .home-text78 {
               font-size: 14px;
               max-width: 80%;
               line-height: 21px;
@@ -3902,7 +3515,7 @@ buttons.forEach(button => {
               align-items: center;
               flex-direction: column-reverse;
             }
-            .home-image29 {
+            .home-image27 {
               height: 620px;
               margin-top: 0px;
             }
@@ -3913,7 +3526,7 @@ buttons.forEach(button => {
               padding-right: var(--dl-space-space-oneandhalfunits);
               padding-bottom: var(--dl-space-space-threeunits);
             }
-            .home-text89 {
+            .home-text82 {
               max-width: 500px;
             }
             .home-buttons {
@@ -3932,40 +3545,16 @@ buttons.forEach(button => {
               padding-right: var(--dl-space-space-oneandhalfunits);
               padding-bottom: var(--dl-space-space-threeunits);
             }
-            .home-image32 {
+            .home-image30 {
               width: 110px;
             }
-            .home-text92 {
+            .home-text85 {
               font-size: 12px;
               line-height: 18px;
             }
-            .home-header19 {
-              padding-left: var(--dl-space-space-twounits);
-              padding-right: var(--dl-space-space-twounits);
-            }
-            .home-nav2 {
-              display: none;
-            }
-            .home-burger-menu1 {
-              display: flex;
-              align-items: center;
-              justify-content: center;
-            }
-            .home-header20 {
-              padding-left: var(--dl-space-space-twounits);
-              padding-right: var(--dl-space-space-twounits);
-            }
-            .home-nav4 {
-              display: none;
-            }
-            .home-burger-menu2 {
-              display: flex;
-              align-items: center;
-              justify-content: center;
-            }
           }
           @media (max-width: 479px) {
-            .home-navbar {
+            .home-header07 {
               padding: var(--dl-space-space-unit);
             }
             .home-mobile-menu {
@@ -3974,32 +3563,20 @@ buttons.forEach(button => {
             .home-content {
               padding-right: var(--dl-space-space-oneandhalfunits);
             }
-            .home-header07 {
+            .home-header08 {
               max-width: 80%;
             }
             .home-caption6 {
               max-width: 100%;
             }
-            .home-book2 {
+            .home-book {
               width: 100%;
             }
-            .home-image12 {
+            .home-image10 {
               max-height: 500px;
             }
             .home-types1 {
               flex-direction: column;
-            }
-            .home-header19 {
-              padding: var(--dl-space-space-unit);
-            }
-            .home-mobile-menu1 {
-              padding: 16px;
-            }
-            .home-header20 {
-              padding: var(--dl-space-space-unit);
-            }
-            .home-mobile-menu2 {
-              padding: 16px;
             }
           }
         `}

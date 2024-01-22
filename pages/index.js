@@ -137,17 +137,13 @@ const Home = (props) => {
         </div>
         <header data-role="Header" className="home-header07">
           <div className="home-container1">
-            <img
-              alt="logo"
-              src="https://presentation-website-assets.teleporthq.io/logos/logo1.png"
-              className="home-image06"
-            />
+            <img alt="logo" src="/logo1-200h.png" className="home-image06" />
             <div className="home-nav">
               <NavigationLinks3 rootClassName="rootClassName12"></NavigationLinks3>
             </div>
           </div>
           <div className="home-btn-group">
-            <button className="button">Buy now</button>
+            <button className="button">Contact Us</button>
           </div>
           <div data-role="BurgerMenu" className="home-burger-menu">
             <svg viewBox="0 0 1024 1024" className="home-icon01">
@@ -227,7 +223,7 @@ const Home = (props) => {
         </section>
         <section className="home-practices1">
           <div className="home-heading08">
-            <h2 className="home-text07">Our practices</h2>
+            <h2 className="home-text07">Our Services</h2>
             <p className="home-text08">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt.
@@ -1364,7 +1360,8 @@ buttons.forEach(button => {
             flex-direction: row;
           }
           .home-image06 {
-            height: 2rem;
+            width: 180px;
+            height: 50px;
           }
           .home-nav {
             display: flex;

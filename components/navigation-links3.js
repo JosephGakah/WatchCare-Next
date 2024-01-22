@@ -10,7 +10,6 @@ const NavigationLinks3 = (props) => {
         <span className="navigation-links3-text1">{props.text1}</span>
         <span className="navigation-links3-text2">{props.text2}</span>
         <span className="navigation-links3-text3">{props.text3}</span>
-        <span className="navigation-links3-text4">{props.text4}</span>
       </nav>
       <style jsx>
         {`
@@ -27,9 +26,6 @@ const NavigationLinks3 = (props) => {
             margin-left: var(--dl-space-space-twounits);
           }
           .navigation-links3-text3 {
-            margin-left: var(--dl-space-space-twounits);
-          }
-          .navigation-links3-text4 {
             margin-left: var(--dl-space-space-twounits);
           }
 
@@ -53,10 +49,6 @@ const NavigationLinks3 = (props) => {
               margin-left: 0;
               margin-bottom: var(--dl-space-space-unit);
             }
-            .navigation-links3-text4 {
-              margin-left: 0;
-              margin-bottom: var(--dl-space-space-unit);
-            }
           }
         `}
       </style>
@@ -65,21 +57,21 @@ const NavigationLinks3 = (props) => {
 }
 
 NavigationLinks3.defaultProps = {
-  text: 'About',
-  text3: 'Team',
-  text4: 'Blog',
-  text1: 'Features',
   rootClassName: '',
-  text2: 'Pricing',
+  text2: 'Services',
+  text: 'Home',
+  text4: 'Blog',
+  text1: 'About',
+  text3: 'Careers',
 }
 
 NavigationLinks3.propTypes = {
-  text: PropTypes.string,
-  text3: PropTypes.string,
-  text4: PropTypes.string,
-  text1: PropTypes.string,
   rootClassName: PropTypes.string,
   text2: PropTypes.string,
+  text: PropTypes.string,
+  text4: PropTypes.string,
+  text1: PropTypes.string,
+  text3: PropTypes.string,
 }
 
 export default NavigationLinks3

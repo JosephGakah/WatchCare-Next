@@ -68,18 +68,18 @@ NavigationLinks2.defaultProps = {
   text: 'About',
   text3: 'Team',
   text4: 'Blog',
-  text1: 'Features',
-  rootClassName: '',
   text2: 'Pricing',
+  rootClassName: '',
+  text1: 'Features',
 }
 
 NavigationLinks2.propTypes = {
   text: PropTypes.string,
   text3: PropTypes.string,
   text4: PropTypes.string,
-  text1: PropTypes.string,
-  rootClassName: PropTypes.string,
   text2: PropTypes.string,
+  rootClassName: PropTypes.string,
+  text1: PropTypes.string,
 }
 
 export default NavigationLinks2
